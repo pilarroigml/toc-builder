@@ -77,6 +77,90 @@
         }
       ],
       "status": "draft"
+    },
+    {
+      "level": "outcomesShort",
+      "definition": "The first changes you expect among the people you reach, as a direct result of your outputs. These are usually changes in knowledge, skills, confidence or behaviour. Your project influences them strongly, but doesn't fully control them.",
+      "strongExample": "Within a year of the training, more of the 1,500 market traders in the programme have introduced at least one new product and have taken out a loan to grow their business.",
+      "weakExample": {
+        "text": "1,500 traders trained in a proactive business mindset.",
+        "whatIsWrong": "This is something the project delivers, so it's an output. It says nothing about what changes for the traders after the training.",
+        "improved": "Within a year, more trained traders have tried something new in their business, such as a new product or a loan to expand."
+      },
+      "tip": "Write who changes and what changes, for example 'more traders introduce new products'. If you can't imagine how you'd observe or measure the change, make it more concrete.",
+      "sources": [
+        {
+          "title": "Theory of change in ten steps",
+          "organisation": "NPC (New Philanthropy Capital)",
+          "url": "https://www.thinknpc.org/resource-hub/ten-steps/",
+          "accessed": "2026-10-06"
+        },
+        {
+          "title": "Thinking like an entrepreneur: boosting small business growth with mindset training in Togo",
+          "organisation": "IPA (Innovations for Poverty Action)",
+          "url": "https://poverty-action.org/thinking-entrepreneur-boosting-small-business-growth-with-mindset-training-togo",
+          "accessed": "2026-10-06"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "level": "outcomesMedium",
+      "definition": "Changes that build on the first ones and take longer to appear, often towards the end of the project or soon after. They are usually lasting changes in practice, income, wellbeing or how institutions work. Your project contributes to them, alongside other factors.",
+      "strongExample": "Two years after the training, participating traders earn higher monthly profits than similar traders who weren't trained, and more of them have invested in equipment or stock for their business.",
+      "weakExample": {
+        "text": "Increased profits.",
+        "whatIsWrong": "It doesn't say whose profits, compared with what, or by when, so nobody could check whether it happened.",
+        "improved": "Two years after the training, participating traders earn higher monthly profits than similar traders who weren't trained."
+      },
+      "tip": "The step from short-term to medium-term outcomes is where many theories of change are weakest. Spell out why the first change should lead to the next, and what else must be true. In one evaluated training programme, women gained at first but invested less than men in their businesses, and their gains faded. Assumptions like access to money for investment are worth naming.",
+      "sources": [
+        {
+          "title": "Thinking like an entrepreneur: boosting small business growth with mindset training in Togo",
+          "organisation": "IPA (Innovations for Poverty Action)",
+          "url": "https://poverty-action.org/thinking-entrepreneur-boosting-small-business-growth-with-mindset-training-togo",
+          "accessed": "2026-10-06"
+        },
+        {
+          "title": "Theory of change in ten steps",
+          "organisation": "NPC (New Philanthropy Capital)",
+          "url": "https://www.thinknpc.org/resource-hub/ten-steps/",
+          "accessed": "2026-10-06"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "level": "impact",
+      "definition": "The lasting, long-term change you want to see for the people or place you care about. It usually takes years, goes beyond the life of your project, and depends on many actors. Your project contributes to it, but can't achieve it alone.",
+      "strongExample": "Small businesses run by women in the city are as profitable and long-lasting as those run by men.",
+      "weakExample": {
+        "text": "End poverty and empower women across Africa.",
+        "whatIsWrong": "It's far beyond what one project can meaningfully contribute to, so it can't guide your choices or show how your work adds up. Nobody could trace your contribution to it.",
+        "improved": "Women who run small businesses in the city earn as much from them as men do."
+      },
+      "tip": "Many teams start here and work backwards: ask what must already be true just before this change happens, then what must be true before that. Also ask whether the change will hold for everyone. Gains that last for one group can fade for another.",
+      "sources": [
+        {
+          "title": "What is Theory of Change?",
+          "organisation": "Center for Theory of Change",
+          "url": "https://www.theoryofchange.org/what-is-theory-of-change/",
+          "accessed": "2026-10-06"
+        },
+        {
+          "title": "Theory of change in ten steps",
+          "organisation": "NPC (New Philanthropy Capital)",
+          "url": "https://www.thinknpc.org/resource-hub/ten-steps/",
+          "accessed": "2026-10-06"
+        },
+        {
+          "title": "Thinking like an entrepreneur: boosting small business growth with mindset training in Togo",
+          "organisation": "IPA (Innovations for Poverty Action)",
+          "url": "https://poverty-action.org/thinking-entrepreneur-boosting-small-business-growth-with-mindset-training-togo",
+          "accessed": "2026-10-06"
+        }
+      ],
+      "status": "draft"
     }
   ]
 }
