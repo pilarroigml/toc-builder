@@ -34,6 +34,14 @@
   "addIndicator": "Add an indicator",
   "removeIndicator": "Remove indicator {number}",
 
+  "checklistHeading": "Things to check",
+  "checklistNone": "Nothing to flag at this level.",
+  "checklistCountIntro": "{count} suggestion(s). These are prompts to review, not errors, and you can move on at any time.",
+  "checklistFound": "Found",
+  "checklistIndicators": "Indicator number",
+  "checklistCount": "Count",
+  "checklistHowToFix": "How to fix",
+
   "savedNotice": "Saved on this device. Nothing you type leaves your browser.",
   "saveFailed": "Your browser is blocking storage, so your work won't be kept if you close this page.",
   "clearData": "Clear my data",

@@ -11,7 +11,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { z } from 'zod'
 import type { Plugin } from 'vite'
-import { ExampleSchema, FieldsSchema, UiSchema } from './content.ts'
+import { ChecklistSchema, ExampleSchema, FieldsSchema, UiSchema } from './content.ts'
 
 // ===== EDITABLE SETTINGS =====
 // Which rules apply to which file. Paths are relative to the /content folder.
@@ -19,6 +19,7 @@ import { ExampleSchema, FieldsSchema, UiSchema } from './content.ts'
 function schemaFor(relativePath: string): z.ZodType | null {
   if (/^ui\.[a-z]{2}\.json$/.test(relativePath)) return UiSchema
   if (/^fields\.[a-z]{2}\.json$/.test(relativePath)) return FieldsSchema
+  if (/^checklist\.[a-z]{2}\.json$/.test(relativePath)) return ChecklistSchema
   if (/^examples\/[^/]+\.json$/.test(relativePath)) return ExampleSchema
   return null
 }

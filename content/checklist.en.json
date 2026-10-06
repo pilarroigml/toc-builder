@@ -1,0 +1,144 @@
+{
+  "rules": [
+    {
+      "id": "output-uses-outcome-words",
+      "check": "wordsInStatements",
+      "levels": ["outputs"],
+      "words": ["improved", "improve", "improves", "increased", "increase", "increases", "strengthened", "strengthen", "enhanced", "enhance", "better", "reduced", "reduce", "decreased", "empowered"],
+      "title": "This output may describe an outcome",
+      "explanation": "Words like 'improved' or 'increased' usually describe a change in people's lives, which is an outcome. Outputs are what your project delivers and can count directly.",
+      "fix": "Say what you will deliver, for example '300 girls receive bursaries', and move the change to your outcomes.",
+      "sources": [
+        {
+          "title": "Logframe",
+          "organisation": "BetterEvaluation",
+          "url": "https://www.betterevaluation.org/methods-approaches/methods/logframe",
+          "accessed": "2026-10-06"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "problem-sounds-like-solution",
+      "check": "wordsInStatements",
+      "levels": ["problem"],
+      "words": ["need for", "needs to", "lack of", "provide", "provision of", "our project", "our programme", "our organisation", "we will"],
+      "title": "Check whether your problem describes a solution",
+      "explanation": "A problem statement describes the situation for the people affected. Phrases like 'lack of scholarships' or 'need for training' often assume the answer before looking at causes. Some uses are fine, such as 'lack of clean water'.",
+      "fix": "Describe who is affected, where, how much, and why it happens, without naming what you plan to do.",
+      "sources": [
+        {
+          "title": "Theory of change in ten steps",
+          "organisation": "NPC (New Philanthropy Capital)",
+          "url": "https://www.thinknpc.org/resource-hub/ten-steps/",
+          "accessed": "2026-10-06"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "no-assumptions",
+      "check": "noAssumptions",
+      "levels": ["activities", "outputs", "outcomesShort", "outcomesMedium", "impact"],
+      "title": "No assumptions yet",
+      "explanation": "Assumptions are the things outside your control that must hold true for this level to lead to the next. Reviewers look for them at every level.",
+      "fix": "Ask: what else must be true for this to work? Add one or two assumptions, one per line.",
+      "sources": [
+        {
+          "title": "Logframe",
+          "organisation": "BetterEvaluation",
+          "url": "https://www.betterevaluation.org/methods-approaches/methods/logframe",
+          "accessed": "2026-10-06"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "indicator-missing-baseline-or-target",
+      "check": "indicatorMissingBaselineOrTarget",
+      "levels": ["problem", "activities", "outputs", "outcomesShort", "outcomesMedium", "impact"],
+      "title": "An indicator has no baseline or target",
+      "explanation": "Without a starting point (baseline) and a goal (target), nobody can tell whether the change happened or how big it was.",
+      "fix": "Add where things stand now, with a date, and what you aim to reach, by when.",
+      "sources": [
+        {
+          "title": "Logframe",
+          "organisation": "BetterEvaluation",
+          "url": "https://www.betterevaluation.org/methods-approaches/methods/logframe",
+          "accessed": "2026-10-06"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "indicator-missing-source",
+      "check": "indicatorMissingSource",
+      "levels": ["problem", "activities", "outputs", "outcomesShort", "outcomesMedium", "impact"],
+      "title": "An indicator has no source of evidence",
+      "explanation": "Each indicator needs a source of evidence, so others can see where the data will come from and check it.",
+      "fix": "Name the data source, for example school registers, a survey, or payment records.",
+      "sources": [
+        {
+          "title": "Logframe",
+          "organisation": "BetterEvaluation",
+          "url": "https://www.betterevaluation.org/methods-approaches/methods/logframe",
+          "accessed": "2026-10-06"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "no-indicators",
+      "check": "noIndicators",
+      "levels": ["outputs", "outcomesShort", "outcomesMedium", "impact"],
+      "title": "No indicators yet",
+      "explanation": "Indicators show how you will know whether this level has been achieved. Funders usually expect at least one for outputs, outcomes and impact.",
+      "fix": "Add at least one indicator with a baseline, a target and a source of evidence.",
+      "sources": [
+        {
+          "title": "Logframe",
+          "organisation": "BetterEvaluation",
+          "url": "https://www.betterevaluation.org/methods-approaches/methods/logframe",
+          "accessed": "2026-10-06"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "too-many-activities",
+      "check": "tooManyStatements",
+      "levels": ["activities"],
+      "max": 6,
+      "title": "That's a lot of activities",
+      "explanation": "A theory of change shows the main activities. Long lists make the logic hard to follow, and the detail usually belongs in your workplan.",
+      "fix": "Group related tasks into a few main activities, each leading to at least one output.",
+      "sources": [
+        {
+          "title": "Logframe",
+          "organisation": "BetterEvaluation",
+          "url": "https://www.betterevaluation.org/methods-approaches/methods/logframe",
+          "accessed": "2026-10-06"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "id": "statement-too-long",
+      "check": "longStatement",
+      "levels": ["activities", "outputs", "outcomesShort", "outcomesMedium", "impact"],
+      "maxWords": 20,
+      "title": "A statement is quite long",
+      "explanation": "Short statements read clearly in the diagram and logframe. Detail such as numbers, dates and methods fits better in the indicators.",
+      "fix": "Aim for about 6 to 12 words. Keep the core change or action, and move detail to the indicators.",
+      "sources": [
+        {
+          "title": "Logframe",
+          "organisation": "BetterEvaluation",
+          "url": "https://www.betterevaluation.org/methods-approaches/methods/logframe",
+          "accessed": "2026-10-06"
+        }
+      ],
+      "status": "draft"
+    }
+  ]
+}

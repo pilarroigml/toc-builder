@@ -71,6 +71,13 @@ export const UiSchema = z.strictObject({
   indicatorNumber: text,
   addIndicator: text,
   removeIndicator: text,
+  checklistHeading: text,
+  checklistNone: text,
+  checklistCountIntro: text,
+  checklistFound: text,
+  checklistIndicators: text,
+  checklistCount: text,
+  checklistHowToFix: text,
   savedNotice: text,
   saveFailed: text,
   clearData: text,
@@ -172,7 +179,36 @@ export const ExampleSchema = z.strictObject({
   status: Status,
 })
 
+// ---------- Quality checklist (content/checklist.en.json) ----------
+// Each rule names a "check": one of the kinds of check the app knows how to run
+// (see src/lib/checklist.ts). The wording, levels and thresholds are all editable here.
+
+const ruleBase = {
+  id: z.string().regex(/^[a-z0-9-]+$/, 'Use lowercase letters, numbers and hyphens only'),
+  levels: z.array(LevelId).min(1),
+  title: text,
+  explanation: text,
+  fix: text,
+  sources: Sources,
+  status: Status,
+}
+
+export const ChecklistRuleSchema = z.discriminatedUnion('check', [
+  z.strictObject({ ...ruleBase, check: z.literal('wordsInStatements'), words: z.array(text).min(1) }),
+  z.strictObject({ ...ruleBase, check: z.literal('noAssumptions') }),
+  z.strictObject({ ...ruleBase, check: z.literal('noIndicators') }),
+  z.strictObject({ ...ruleBase, check: z.literal('indicatorMissingBaselineOrTarget') }),
+  z.strictObject({ ...ruleBase, check: z.literal('indicatorMissingSource') }),
+  z.strictObject({ ...ruleBase, check: z.literal('tooManyStatements'), max: z.number().int().min(1) }),
+  z.strictObject({ ...ruleBase, check: z.literal('longStatement'), maxWords: z.number().int().min(1) }),
+])
+
+export const ChecklistSchema = z.strictObject({
+  rules: z.array(ChecklistRuleSchema).min(1),
+})
+
 // Types the app code uses, derived from the rules above so they never drift apart.
+export type ChecklistRule = z.infer<typeof ChecklistRuleSchema>
 export type Ui = z.infer<typeof UiSchema>
 export type FieldGuidance = z.infer<typeof FieldGuidanceSchema>
 export type Example = z.infer<typeof ExampleSchema>

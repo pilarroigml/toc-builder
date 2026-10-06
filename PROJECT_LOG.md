@@ -1,5 +1,26 @@
 # Project log
 
+## Step 5 — Quality checklist (done locally, 6 October 2026, waiting for Pilar's test)
+
+### 1. What now exists and where
+- `content/checklist.en.json` holds the eight rules: wording, words to look for, thresholds, sources and status. This is the official version for checkers to review.
+- `src/lib/checklist.ts` runs the checks. It knows seven kinds of check (words in statements, no assumptions, no indicators, missing baseline or target, missing source of evidence, too many statements, long statement).
+- `src/components/ChecklistBox.tsx` shows "Things to check" under the form for the current level. It only appears once something is written. Suggestions never block moving on.
+- The content checker now also validates `checklist.en.json`, so a typo in a rule stops the build.
+- Tested: Example 1 is clean on all six levels, and each of the eight rules triggers on a deliberate mistake.
+
+### 2. How to run or open it
+- `npm run dev`, open `http://localhost:5173/toc-builder/`, go to Outputs, and type "Improved attendance of girls".
+
+### 3. How I'd know it broke
+- No "Things to check" box appears after typing at a level.
+- A rule flags things that are clearly fine. Adjust its words or threshold.
+
+### 4. How to fix or change it
+- To change a rule's wording, words or threshold, edit `content/checklist.en.json`. For example, change `"max": 6` for activities.
+- To remove a rule, delete its block. To add a rule of an existing kind, copy a block and give it a new `id`.
+- A new kind of check needs code in `src/lib/checklist.ts` and `src/schema/content.ts`.
+
 ## Step 4 — Diagram and logframe views (done, 6 October 2026)
 
 ### Part 2: the logframe

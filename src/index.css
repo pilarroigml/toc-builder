@@ -15,6 +15,7 @@
   --color-line-soft: #e4dfd5;    /* borders of cards, upcoming steps */
   --color-weak-tint: #f7ece4;    /* warm tint, behind weak examples */
   --color-danger: #9b2c1f;       /* "clear my data" confirmation */
+  --color-warn: #b7791f;         /* left edge of "Things to check" suggestions */
 }
 /* ============================= */
 

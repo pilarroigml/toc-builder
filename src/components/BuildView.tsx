@@ -7,6 +7,7 @@ import { levelHasContent, type Draft, type LevelDraft } from '../lib/draft'
 import ProgressSteps from './ProgressSteps'
 import LevelForm from './LevelForm'
 import GuidancePanel from './GuidancePanel'
+import ChecklistBox from './ChecklistBox'
 
 type Props = {
   draft: Draft
@@ -62,6 +63,10 @@ export default function BuildView({ draft, onChange, saveWorks }: Props) {
               onChange={updateLevel}
               guidanceOnSmallScreens={<GuidancePanel level={level} />}
             />
+          </div>
+
+          <div className="mt-8">
+            <ChecklistBox level={level} value={draft.levels[level]} />
           </div>
 
           {saveWorks ? (
