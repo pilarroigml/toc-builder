@@ -9,7 +9,7 @@
         "whatIsWrong": "This describes a missing solution, not the problem. It assumes scholarships are the answer before looking at why girls leave school, and it says nothing about who is affected or how many.",
         "improved": "Girls in our district leave secondary school earlier than boys. Cost is one of several reasons families give, alongside safety and household work."
       },
-      "tip": "Keep it to one or two sentences and narrow it down to a group, a place or one part of a bigger issue. Asking 'why does this happen?' several times helps you move from symptoms to causes, but check your answers against data and against what the people affected tell you. Common explanations don't always hold locally. A World Bank study in Liberia found that girls there spent little time on household work and rarely married early. The bigger problems were cost and girls being several years behind the grade expected for their age.",
+      "tip": "Keep it to one or two sentences and narrow it down to a group, a place or one part of a bigger issue. Asking 'why does this happen?' several times helps you move from symptoms to causes, but check your answers against data and against what the people affected tell you. Common explanations don't always hold in every place.",
       "sources": [
         {
           "title": "Theory of change in ten steps",
@@ -21,12 +21,6 @@
           "title": "Five Whys",
           "organisation": "BetterEvaluation",
           "url": "https://www.betterevaluation.org/methods-approaches/methods/five-whys",
-          "accessed": "2026-10-06"
-        },
-        {
-          "title": "Challenging conventional wisdom about girls' schooling (2016)",
-          "organisation": "World Bank, Africa Gender Innovation Lab",
-          "url": "https://blogs.worldbank.org/en/voices/challenging-conventional-wisdom-about-girl-s-schooling",
           "accessed": "2026-10-06"
         }
       ],
