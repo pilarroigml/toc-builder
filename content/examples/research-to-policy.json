@@ -6,7 +6,7 @@
   "sectors": ["research", "development"],
   "userTypes": ["researcher"],
   "summary": "A research team has studied ways to raise childhood vaccination rates. The project aims to get the findings used by the national health ministry and district health offices when they plan the next immunisation programme.",
-  "whyThisWorks": "Research projects often stop at publishing. This example treats use of the evidence as the goal. Activities start before the study, by agreeing questions with the people who will use the answers. Outcomes follow three kinds of research impact: understanding (conceptual), skills (capacity building), then changes in plans and budgets (instrumental). Assumptions name the political risks, such as timing and changes of government.",
+  "whyThisWorks": "Research projects often stop at publishing. This example treats use of the evidence as the goal. Activities start before the study, by agreeing questions with the people who will use the answers. Outcomes follow three kinds of research impact: understanding (conceptual), skills (capacity building), then changes in plans and budgets (instrumental). Assumptions name the political risks, such as timing and changes of government. It also reflects a shift under way: officials increasingly reach evidence through AI tools, often with smaller teams. So the project publishes findings in forms those tools can read accurately, and trains analysts to check AI summaries. There is little evidence yet on how AI changes research uptake, so treat this part as a hypothesis to test.",
   "levels": {
     "problem": {
       "items": [
@@ -29,7 +29,8 @@
         "Agree research questions with ministry staff before the study starts",
         "Share findings in two-page briefs timed to the budget cycle",
         "Run 45-minute evidence sessions for district health officials",
-        "Train 30 ministry analysts to read and use evaluations",
+        "Publish data and plain summaries that AI tools can find and cite",
+        "Train 30 ministry analysts to judge evidence, including AI summaries",
         "Present results at the national immunisation planning meeting"
       ],
       "assumptions": [
@@ -50,10 +51,12 @@
         "Research questions agreed with the ministry in writing",
         "Four policy briefs published before budget deadlines",
         "Evidence sessions reach officials from 20 districts",
-        "30 analysts complete evaluation training"
+        "Open data and a plain summary online for every finding",
+        "30 analysts trained to judge evidence and AI summaries"
       ],
       "assumptions": [
         "Briefs reach the people who draft the plans",
+        "AI tools used by ministry staff represent the findings accurately",
         "Trained officials stay in post long enough to use it"
       ],
       "indicators": [
@@ -68,7 +71,7 @@
     "outcomesShort": {
       "items": [
         "Officials understand what the study found and how strong it is",
-        "Analysts can judge evidence when advising on plans",
+        "Analysts check evidence and AI summaries when advising on plans",
         "Ministry staff ask the team for evidence on new questions"
       ],
       "assumptions": [
@@ -158,5 +161,5 @@
       "accessed": "2026-10-06"
     }
   ],
-  "status": "draft"
+  "status": "needs-review"
 }

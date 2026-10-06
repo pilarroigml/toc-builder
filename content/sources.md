@@ -50,6 +50,8 @@ Checked and not used: "Rebound effects could offset more than half of avoided fo
 
 The research topic (childhood vaccination) is invented for the example. The sources support how research uptake works, not any claim about vaccination methods.
 
+**AI flag (6 October 2026, at Pilar's request):** the sources predate generative AI becoming part of everyday government work, which may change how evidence reaches decision makers (smaller teams, officials asking AI assistants instead of reading briefs, AI summaries that may misrepresent findings). The example adds an activity to publish data and plain summaries that AI tools can read, trains analysts to check AI summaries, and adds the assumption that AI tools represent the findings accurately. There is little evidence yet on how AI changes research uptake, so this part is a hypothesis and the example is marked "needs-review". Look for new evidence before v1 is shared widely.
+
 | Title | Organisation | URL | Date accessed | Used for |
 |-------|--------------|-----|---------------|----------|
 | Defining impact (ESRC impact toolkit) | UKRI, Economic and Social Research Council | https://www.ukri.org/councils/esrc/impact-toolkit-for-economic-and-social-sciences/defining-impact/ | 2026-10-06 | Structure of the outcomes: conceptual (understanding), capacity building (skills), instrumental (changes to plans and budgets). Knowledge exchange as two-way, and co-producing research questions with users. |
