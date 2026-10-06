@@ -1,6 +1,6 @@
 # Project log
 
-## Step 4 — Diagram and logframe views (done locally, 6 October 2026, waiting for Pilar's check)
+## Step 4 — Diagram and logframe views (done, 6 October 2026)
 
 ### Part 2: the logframe
 - `src/components/LogframeView.tsx` shows the logframe. Rows run top-down from long-term impact to activities, the usual donor order. The problem appears in a line above the table.
