@@ -1,6 +1,15 @@
 # Project log
 
-## Step 4 — Diagram and logframe views (part 1 of 2: the diagram, 6 October 2026)
+## Step 4 — Diagram and logframe views (done locally, 6 October 2026, waiting for Pilar's check)
+
+### Part 2: the logframe
+- `src/components/LogframeView.tsx` shows the logframe. Rows run top-down from long-term impact to activities, the usual donor order. The problem appears in a line above the table.
+- Columns: level, description, indicator, baseline, target, source of evidence (means of verification), assumptions. Each indicator gets its own line within its level.
+- On phones (narrower than 768 pixels), each level becomes a card with labelled fields, because the full table can't fit.
+- `src/lib/logframe.ts` builds the rows. The CSV export (Step 7) will reuse it so both always match. Row order is set by `LOGFRAME_ORDER` at the top of that file.
+- A third tab, "Logframe", sits next to "Build" and "Diagram".
+
+### Part 1: the diagram
 
 ### 1. What now exists and where
 - Chosen layout: a mix of option A and option B. Item cards in columns, problem and impact as coloured banners at each end, and each level's assumptions in a dashed box under it. Left to right on desktop, top to bottom on phones.

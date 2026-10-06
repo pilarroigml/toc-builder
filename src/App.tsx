@@ -1,5 +1,5 @@
 // The main screen. It holds the user's work and switches between views:
-// "Build" (the guided form) and "Diagram" (the one-page picture).
+// "Build" (the guided form), "Diagram" (the one-page picture) and "Logframe" (the table).
 // Everything the user types is saved on this device as they type (see src/lib/draft.ts).
 // All words shown to users come from /content, never typed here.
 
@@ -10,6 +10,7 @@ import ClearDataButton from './components/ClearDataButton'
 import ViewTabs, { type View } from './components/ViewTabs'
 import BuildView from './components/BuildView'
 import DiagramView from './components/DiagramView'
+import LogframeView from './components/LogframeView'
 
 // ===== EDITABLE SETTINGS =====
 // The worked example offered when the diagram is still empty.
@@ -54,9 +55,10 @@ export default function App() {
 
       {view === 'build' && <BuildView draft={draft} onChange={setDraft} saveWorks={saveWorks} />}
 
-      {view === 'diagram' && (
+      {view !== 'build' && (
         <div className="mt-6">
           {draftIsEmpty(draft) ? (
+            // Nothing written yet: explain, and offer the worked example.
             <div className="rounded-xl border border-line-soft bg-white p-6 text-center">
               <p className="text-muted">{ui.diagramEmpty}</p>
               {starterExample && (
@@ -69,8 +71,10 @@ export default function App() {
                 </button>
               )}
             </div>
-          ) : (
+          ) : view === 'diagram' ? (
             <DiagramView draft={draft} />
+          ) : (
+            <LogframeView draft={draft} />
           )}
         </div>
       )}
