@@ -1,4 +1,40 @@
 {
   "appTitle": "Theory of Change Builder",
-  "helloMessage": "Hello world. This page is coming soon."
+  "intro": "Work in progress. This page shows the first piece of guidance and the first worked example, to test the content files.",
+  "guidanceHeading": "Guidance",
+  "definitionLabel": "What it is",
+  "strongExampleLabel": "Strong example",
+  "weakExampleLabel": "Weak example",
+  "whatIsWrongLabel": "What's wrong with it",
+  "improvedLabel": "Improved version",
+  "tipLabel": "Tip",
+  "sourcesLabel": "Sources",
+  "accessedLabel": "accessed",
+  "statusLabel": "Content status",
+  "exampleHeading": "Worked example",
+  "illustrativeNotice": "Illustrative example. The organisation, place and figures are invented.",
+  "summaryLabel": "Summary",
+  "whyThisWorksLabel": "Why this works",
+  "assumptionsLabel": "Assumptions",
+  "indicatorsLabel": "Indicators",
+  "baselineLabel": "Baseline",
+  "targetLabel": "Target",
+  "meansOfVerificationLabel": "How we'll know",
+  "draftPairsLabel": "From first draft to stronger version",
+  "weakDraftLabel": "First draft",
+  "improvedDraftLabel": "Improved",
+  "whyLabel": "Why",
+  "levelNames": {
+    "problem": "Problem",
+    "activities": "Activities",
+    "outputs": "Outputs",
+    "outcomesShort": "Short-term outcomes",
+    "outcomesMedium": "Medium-term outcomes",
+    "impact": "Long-term impact"
+  },
+  "statusNames": {
+    "draft": "Draft",
+    "needs-review": "Needs expert review",
+    "reviewed-by-practitioner": "Reviewed by a practitioner"
+  }
 }

@@ -10,8 +10,10 @@ const REPO_NAME = 'toc-builder'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
+import { validateContent } from './src/schema/validateContentPlugin.ts'
 
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
+  // validateContent() checks every file in /content and stops the build if one is wrong.
+  plugins: [validateContent(), react(), tailwindcss()],
   base: `/${REPO_NAME}/`,
 })

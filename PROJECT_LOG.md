@@ -1,5 +1,28 @@
 # Project log
 
+## Step 1 — Content schema (done locally, 6 October 2026, waiting for Pilar's test)
+
+### 1. What now exists and where
+- Content rules in `src/schema/content.ts`. Allowed values (levels, statuses, sectors, user types) in `src/schema/lists.ts`.
+- A content checker in `src/schema/validateContentPlugin.ts`, connected in `vite.config.ts`.
+- `content/fields.en.json` with the Problem guidance (status draft).
+- `content/examples/girls-secondary-school.json`, Example 1 (status needs-review).
+- `content/ui.en.json` with all labels for this page.
+- `content/sources.md` logging the sources used and checked.
+- New dependencies. `zod` checks the content format during builds and isn't shipped to visitors. `@types/node` describes Node's built-in tools for the code spell-checker and contains no code that runs.
+
+### 2. How to run or open it
+- `npm run dev`, then open `http://localhost:5173/toc-builder/`. The page shows the Problem guidance, then Example 1 in full, as plain text.
+
+### 3. How I'd know it broke
+- A red box saying "CONTENT CHECK FAILED" in the preview, naming the file and the field.
+- `npm run build` stops with the same message, and on GitHub the deploy fails and you get an email. The live site keeps the last good version.
+
+### 4. How to fix or change it
+- Edit wording in the `content/` files and save. The preview updates by itself.
+- Read the red message. It says which file and which field. Common causes are a missing comma or quote, a misspelt key, or a value that isn't allowed.
+- To allow a new sector or user type, add it in `src/schema/lists.ts`.
+
 ## Step 0 — Setup (done, 6 October 2026)
 
 ### 1. What now exists and where
