@@ -7,7 +7,7 @@
 |---|---|---|---|---|
 | 1 | Keeping girls in secondary school | NGO | Development, education, gender | Done |
 | 2 | Mobile savings groups for smallholder farmers | NGO | Development, financial inclusion | Done (IPA, J-PAL) |
-| 3 | Food waste social enterprise (surplus-food app and kitchen waste tracking, modelled on business models like Too Good To Go and Orbisk without naming them) | Social entrepreneur | Sustainability | To do (UNEP Food Waste Index, WRAP, Champions 12.3) |
+| 3 | Cutting food waste in restaurants and shops (surplus-food app and kitchen waste measurement, modelled on business models like Too Good To Go and Orbisk without naming them) | Social entrepreneur | Sustainability | Done (UNEP, European Commission, Champions 12.3, WRAP, Nature Communications, Decision Sciences) |
 | 4 | Getting policy research to decision makers | Researcher | Research | To do (IPA, J-PAL, ODI, IDRC) |
 | 5 | Clean cooking stoves | NGO or enterprise | Energy (new sector) | Stretch (ESMAP) |
 | 6 | Community garden or personal project | Community or individual | Social impact | Stretch |

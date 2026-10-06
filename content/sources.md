@@ -31,6 +31,21 @@ Every source used in the guidance and examples is logged here. All content is pa
 | Mobile money and agricultural investment in Mozambique (2012 to 2013) | J-PAL | https://www.povertyactionlab.org/evaluation/mobile-money-and-agricultural-investment-mozambique | 2026-10-06 | Model for mobile money savings: interest-bearing accounts raised savings by 32 to 44% and fertiliser use by 28 to 36 percentage points. Giving friends accounts too reduced savings, the basis for the "pressure to share savings" assumption. |
 | Increasing financial inclusion via group loans and digitized savings records in Malawi and Uganda (2024 to 2026, with World Vision) | IPA | https://poverty-action.org/increasing-financial-inclusion-group-loans-and-digitized-savings-records-malawi-and-uganda | 2026-10-06 | Design reference only, for digital records. In progress, **no results yet** (expected 2026). Revisit for results. |
 
+### Example 3: cutting food waste in restaurants and shops (social enterprise)
+
+Sources deliberately diversified beyond J-PAL and IPA, at Pilar's request. Business models of real companies (surplus-food apps, kitchen waste measurement, end-of-day donations) informed the design but are not named, in line with the brief.
+
+| Title | Organisation | URL | Date accessed | Used for |
+|-------|--------------|-----|---------------|----------|
+| Food Waste Index Report 2024 | UNEP | https://www.unep.org/resources/publication/food-waste-index-report-2024 | 2026-10-06 | Scale of the problem: 1.05 billion tonnes wasted in 2022 (19% of food available to consumers). Food service about 36 kg per person a year. |
+| Food waste reduction targets, Directive (EU) 2025/1892 | European Commission | https://food.ec.europa.eu/food-safety/food-waste/eu-food-waste-relevant-legislation/food-waste-reduction-targets_en | 2026-10-06 | Impact level: binding 30% per-capita cut at retail and consumption (restaurants, food services, households) by 2030, against the 2021 to 2023 average. In force since 16 October 2025. |
+| The business case for reducing food loss and waste: restaurants (2019) | Champions 12.3 | https://champions123.org/release-new-report-finds-restaurants-save-significant-money-fighting-food-waste | 2026-10-06 | 114 restaurants in 12 countries: $7 saved per $1 invested, kitchen waste down 26% on average within a year, through measuring, staff training and menu changes. Basis for the 25% target and "save money". **Older (2019)**, flag in review. |
+| Measuring and reporting food waste in hospitality and food service (January 2018) | WRAP | https://www.wrap.ngo/resources/measuring-and-reporting-food-waste-hospitality-and-food-service | 2026-10-06 | Measuring as the basis for reducing kitchen waste. **Older (2018)**, flag in review. |
+| Social and environmental analysis of food waste abatement via the peer-to-peer sharing economy (Makov and others, 2020) | Nature Communications | https://www.nature.com/articles/s41467-020-14899-5 | 2026-10-06 | Food-sharing apps divert real food (90 tonnes over 19 months in the UK), but rebound effects, when people spend the money saved on other things, can offset much of the environmental benefit. Supports the "selling surplus solves food waste" draft pair. Open access. |
+| Can surplus-food apps have too much competition? (Wei and Hu, Decision Sciences; news release 28 September 2026) | University of New Hampshire | https://www.unh.edu/news/can-surplus-food-apps-have-too-much-competition | 2026-10-06 | Modelling study: surplus bags can exceed what customers need, so food is wasted at home, and too much competition between platforms can increase waste. Basis for two assumptions. |
+
+Checked and not used: "Rebound effects could offset more than half of avoided food loss and waste" (Nature Food, 2023) redirects to a sign-in page, so likely paywalled. Pret A Manger's end-of-day donation programme (suggested by Pilar) informed the food bank activity, but isn't cited because only self-reported company material was considered.
+
 ## World Bank Gender Innovation Labs, checked 6 October 2026
 
 Tip for reading their briefs: each brief's page on documents.worldbank.org has a "TXT" link with a plain-text version, which avoids downloading the PDF.

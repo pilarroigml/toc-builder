@@ -1,0 +1,179 @@
+{
+  "id": "food-waste-enterprise",
+  "title": "Cutting food waste in restaurants and shops",
+  "illustrative": true,
+  "sectors": ["sustainability"],
+  "userTypes": ["entrepreneur"],
+  "summary": "A project run as a small business in a mid-sized European city helps restaurants, cafés and food shops waste less. It measures kitchen waste so businesses can cut it at the source, sells unavoidable surplus at a discount through an app, and passes what still doesn't sell to a food bank.",
+  "whyThisWorks": "The problem says where the waste comes from and what it costs, without naming the app. The activities tackle waste in order: prevent it in the kitchen first, then rescue what's left. Because this is run as a business, the outcomes include covering its own costs, which investors and funders of social enterprises look for. The impact links to the EU's binding 2030 target. The assumptions name risks found in research: surplus food can still be wasted at home, and too many competing apps can backfire.",
+  "levels": {
+    "problem": {
+      "items": [
+        "City restaurants and food shops throw away about 1 in 6 kg of the food they buy, mostly from over-ordering, large portions and unsold stock."
+      ],
+      "assumptions": [
+        "Businesses act once they can see what they waste and what it costs"
+      ],
+      "indicators": [
+        {
+          "text": "Food waste per meal served in partner kitchens",
+          "baseline": "Set in each kitchen's first month of measuring",
+          "target": "Tracked for context. Targets are set at outcome level.",
+          "meansOfVerification": "Waste-measuring device data"
+        }
+      ]
+    },
+    "activities": {
+      "items": [
+        "Install waste-measuring scales in 40 restaurant kitchens",
+        "Send kitchens weekly reports on what they waste and its cost",
+        "Train kitchen staff on ordering, portions and using leftovers",
+        "Run an app selling surplus food at a discount at closing time",
+        "Pass food that still doesn't sell to a local food bank"
+      ],
+      "assumptions": [
+        "Kitchen staff log waste consistently",
+        "Enough businesses join to make the app worth using"
+      ],
+      "indicators": [
+        {
+          "text": "Number of kitchens measuring their food waste",
+          "baseline": "0",
+          "target": "40 by the end of year 1",
+          "meansOfVerification": "Device data, shared with businesses' consent"
+        }
+      ]
+    },
+    "outputs": {
+      "items": [
+        "40 kitchens measuring waste and receiving weekly reports",
+        "Staff in 40 kitchens trained on ordering and portions",
+        "150 restaurants and shops listing surplus on the app",
+        "Food bank collections three times a week"
+      ],
+      "assumptions": [
+        "Businesses keep measuring after the free trial ends",
+        "App fees stay affordable for small cafés"
+      ],
+      "indicators": [
+        {
+          "text": "Businesses actively listing surplus each month",
+          "baseline": "0",
+          "target": "150 by the end of year 2",
+          "meansOfVerification": "App platform data"
+        }
+      ]
+    },
+    "outcomesShort": {
+      "items": [
+        "Kitchens order and prepare closer to what they sell",
+        "More surplus is sold or donated instead of thrown away",
+        "Customers buy surplus bags regularly"
+      ],
+      "assumptions": [
+        "Surplus bags match what customers can eat, so food isn't wasted at home"
+      ],
+      "indicators": [
+        {
+          "text": "Kitchen food waste per meal served",
+          "baseline": "120 g per meal (first month of measuring)",
+          "target": "90 g per meal by the end of year 1",
+          "meansOfVerification": "Waste-measuring device data"
+        }
+      ]
+    },
+    "outcomesMedium": {
+      "items": [
+        "Partner businesses cut food waste by a quarter and save money",
+        "The business covers its costs from subscriptions and app fees"
+      ],
+      "assumptions": [
+        "Businesses don't cook extra just to fill app listings",
+        "Competing apps don't crowd the same small market"
+      ],
+      "indicators": [
+        {
+          "text": "Average fall in partner kitchens' food waste",
+          "baseline": "0% (first month of measuring)",
+          "target": "25% by the end of year 2",
+          "meansOfVerification": "Waste-measuring device data"
+        },
+        {
+          "text": "Share of the business's costs covered by its own revenue",
+          "baseline": "20% (year 1)",
+          "target": "100% by year 3",
+          "meansOfVerification": "Annual accounts"
+        }
+      ]
+    },
+    "impact": {
+      "items": [
+        "City food businesses waste 30% less food per person by 2030"
+      ],
+      "assumptions": [
+        "City and national authorities keep measuring and reporting food waste"
+      ],
+      "indicators": [
+        {
+          "text": "Food waste from the city's food businesses per resident",
+          "baseline": "Average of 2021 to 2023",
+          "target": "30% lower by 2030, in line with EU targets",
+          "meansOfVerification": "Municipal waste statistics reported under EU rules"
+        }
+      ]
+    }
+  },
+  "draftPairs": [
+    {
+      "level": "outputs",
+      "weak": "Restaurants reduce their food waste",
+      "improved": "40 kitchens measuring waste and receiving weekly reports",
+      "why": "Reducing waste is a change in what restaurants do, so it's an outcome. An output is what the business delivers and can count directly."
+    },
+    {
+      "level": "outcomesShort",
+      "weak": "Selling surplus solves food waste",
+      "improved": "More surplus is sold or donated instead of thrown away",
+      "why": "Selling surplus moves food out of the shop, but some can still be wasted at home, and research suggests too many competing apps can increase waste. The improved version claims only what the project can observe."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Food Waste Index Report 2024",
+      "organisation": "UNEP (United Nations Environment Programme)",
+      "url": "https://www.unep.org/resources/publication/food-waste-index-report-2024",
+      "accessed": "2026-10-06"
+    },
+    {
+      "title": "Food waste reduction targets (Directive (EU) 2025/1892)",
+      "organisation": "European Commission",
+      "url": "https://food.ec.europa.eu/food-safety/food-waste/eu-food-waste-relevant-legislation/food-waste-reduction-targets_en",
+      "accessed": "2026-10-06"
+    },
+    {
+      "title": "The business case for reducing food loss and waste: restaurants (2019)",
+      "organisation": "Champions 12.3",
+      "url": "https://champions123.org/release-new-report-finds-restaurants-save-significant-money-fighting-food-waste",
+      "accessed": "2026-10-06"
+    },
+    {
+      "title": "Measuring and reporting food waste in hospitality and food service (2018)",
+      "organisation": "WRAP",
+      "url": "https://www.wrap.ngo/resources/measuring-and-reporting-food-waste-hospitality-and-food-service",
+      "accessed": "2026-10-06"
+    },
+    {
+      "title": "Social and environmental analysis of food waste abatement via the peer-to-peer sharing economy (Makov and others, Nature Communications, 2020)",
+      "organisation": "Nature Communications",
+      "url": "https://www.nature.com/articles/s41467-020-14899-5",
+      "accessed": "2026-10-06"
+    },
+    {
+      "title": "Can surplus-food apps have too much competition? (Wei and Hu, Decision Sciences, 2026)",
+      "organisation": "University of New Hampshire",
+      "url": "https://www.unh.edu/news/can-surplus-food-apps-have-too-much-competition",
+      "accessed": "2026-10-06"
+    }
+  ],
+  "status": "draft"
+}
