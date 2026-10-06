@@ -41,7 +41,7 @@
         "whatIsWrong": "This names a cause you care about, not something your team does. It's too vague to plan, cost or check: nobody could tell what happens on a Monday morning.",
         "improved": "Pay secondary school fees directly to schools for 300 girls each year, and give bicycles to girls who live far from school."
       },
-      "tip": "Choose activities that answer the causes in your problem statement. If families name cost and distance, your activities should tackle cost and distance. Keep to the main activities, since the detailed tasks belong in your workplan, and check that each one leads to at least one output.",
+      "tip": "Choose activities that answer the causes in your problem statement. If families name cost and distance, your activities should tackle cost and distance. Keep to the main activities, since the detailed tasks belong in your workplan, and check that each one leads to at least one output. How well an activity is run matters as much as what it is. The same girls' club model that worked well in Uganda failed in Tanzania, where mentors had less training and supervision.",
       "sources": [
         {
           "title": "Logframe",
@@ -59,6 +59,12 @@
           "title": "Cycling to school: increasing secondary school enrollment for girls in India (Muralidharan and Prakash)",
           "organisation": "NBER (National Bureau of Economic Research)",
           "url": "https://www.nber.org/papers/w19305",
+          "accessed": "2026-10-06"
+        },
+        {
+          "title": "Top policy lessons on empowering adolescent girls (November 2023)",
+          "organisation": "World Bank, Africa Gender Innovation Lab",
+          "url": "https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099851411152362994",
           "accessed": "2026-10-06"
         }
       ],
@@ -137,6 +143,12 @@
           "title": "Multigenerational benefits to secondary schooling in Ghana",
           "organisation": "J-PAL (Abdul Latif Jameel Poverty Action Lab)",
           "url": "https://www.povertyactionlab.org/evaluation/returns-secondary-schooling-ghana",
+          "accessed": "2026-10-06"
+        },
+        {
+          "title": "Top policy lessons on empowering adolescent girls (November 2023)",
+          "organisation": "World Bank, Africa Gender Innovation Lab",
+          "url": "https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099851411152362994",
           "accessed": "2026-10-06"
         }
       ],

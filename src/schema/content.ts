@@ -66,6 +66,7 @@ export const UiSchema = z.strictObject({
   cancel: text,
   levelPrompts,
   guidanceComingSoon: text,
+  evidenceContextNote: text,
   guidanceHeading: text,
   definitionLabel: text,
   strongExampleLabel: text,

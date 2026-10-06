@@ -43,6 +43,8 @@ export default function GuidancePanel({ level }: { level: LevelId }) {
 
           <SourceList sources={guidance.sources} />
 
+          <p className="mt-4 text-sm text-muted">{ui.evidenceContextNote}</p>
+
           <p className="mt-4 text-xs text-muted">
             {ui.statusLabel}. {ui.statusNames[guidance.status]}
           </p>
