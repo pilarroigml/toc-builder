@@ -1,0 +1,162 @@
+{
+  "id": "research-to-policy",
+  "order": 4,
+  "title": "Getting research into health policy decisions",
+  "illustrative": true,
+  "sectors": ["research", "development"],
+  "userTypes": ["researcher"],
+  "summary": "A research team has studied ways to raise childhood vaccination rates. The project aims to get the findings used by the national health ministry and district health offices when they plan the next immunisation programme.",
+  "whyThisWorks": "Research projects often stop at publishing. This example treats use of the evidence as the goal. Activities start before the study, by agreeing questions with the people who will use the answers. Outcomes follow three kinds of research impact: understanding (conceptual), skills (capacity building), then changes in plans and budgets (instrumental). Assumptions name the political risks, such as timing and changes of government.",
+  "levels": {
+    "problem": {
+      "items": [
+        "District health officials plan vaccination campaigns with little local evidence. Studies arrive as long reports, after decisions are made."
+      ],
+      "assumptions": [
+        "Officials use evidence when it arrives on time and in a usable form"
+      ],
+      "indicators": [
+        {
+          "text": "Share of district immunisation plans citing research evidence",
+          "baseline": "1 in 10 plans (2025 review)",
+          "target": "Tracked for context. Targets are set at outcome level.",
+          "meansOfVerification": "Review of district plans"
+        }
+      ]
+    },
+    "activities": {
+      "items": [
+        "Agree research questions with ministry staff before the study starts",
+        "Share findings in two-page briefs timed to the budget cycle",
+        "Run 45-minute evidence sessions for district health officials",
+        "Train 30 ministry analysts to read and use evaluations",
+        "Present results at the national immunisation planning meeting"
+      ],
+      "assumptions": [
+        "Ministry staff have time to take part",
+        "Study results are ready before planning starts"
+      ],
+      "indicators": [
+        {
+          "text": "Number of evidence sessions held with district officials",
+          "baseline": "0",
+          "target": "20 by the end of year 1",
+          "meansOfVerification": "Session attendance records"
+        }
+      ]
+    },
+    "outputs": {
+      "items": [
+        "Research questions agreed with the ministry in writing",
+        "Four policy briefs published before budget deadlines",
+        "Evidence sessions reach officials from 20 districts",
+        "30 analysts complete evaluation training"
+      ],
+      "assumptions": [
+        "Briefs reach the people who draft the plans",
+        "Trained officials stay in post long enough to use it"
+      ],
+      "indicators": [
+        {
+          "text": "Districts with at least one official at an evidence session",
+          "baseline": "0",
+          "target": "20 of 25 districts by the end of year 1",
+          "meansOfVerification": "Session attendance records"
+        }
+      ]
+    },
+    "outcomesShort": {
+      "items": [
+        "Officials understand what the study found and how strong it is",
+        "Analysts can judge evidence when advising on plans",
+        "Ministry staff ask the team for evidence on new questions"
+      ],
+      "assumptions": [
+        "The findings fit the ministry's priorities and budget"
+      ],
+      "indicators": [
+        {
+          "text": "Trained analysts passing an evidence-use assessment",
+          "baseline": "35% (before training)",
+          "target": "75% after training",
+          "meansOfVerification": "Before-and-after assessment"
+        }
+      ]
+    },
+    "outcomesMedium": {
+      "items": [
+        "More district plans use the study's findings",
+        "The ministry budgets for the approach in its next plan"
+      ],
+      "assumptions": [
+        "A change of government doesn't reverse priorities",
+        "Funding exists to scale the approach up"
+      ],
+      "indicators": [
+        {
+          "text": "District immunisation plans that cite the study's findings",
+          "baseline": "0 of 25 (2025)",
+          "target": "10 of 25 by 2028",
+          "meansOfVerification": "Review of district plans"
+        }
+      ]
+    },
+    "impact": {
+      "items": [
+        "More children are fully vaccinated on time across the country"
+      ],
+      "assumptions": [
+        "Vaccine supply and health workers keep pace with demand"
+      ],
+      "indicators": [
+        {
+          "text": "Share of children fully vaccinated by age 2",
+          "baseline": "78% (2025)",
+          "target": "85% by 2031",
+          "meansOfVerification": "National immunisation records"
+        }
+      ]
+    }
+  },
+  "draftPairs": [
+    {
+      "level": "outputs",
+      "weak": "Policymakers informed about our findings",
+      "improved": "Evidence sessions reach officials from 20 districts",
+      "why": "'Informed' can't be counted, and it hides whether anyone actually came. The improved version names who was reached and how many."
+    },
+    {
+      "level": "outcomesMedium",
+      "weak": "Our research changes national policy",
+      "improved": "More district plans use the study's findings",
+      "why": "Policy change has many causes, and few studies can claim it alone. A specific, visible use of the findings is something the team can track and credibly contribute to."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Defining impact (ESRC impact toolkit)",
+      "organisation": "UKRI, Economic and Social Research Council",
+      "url": "https://www.ukri.org/councils/esrc/impact-toolkit-for-economic-and-social-sciences/defining-impact/",
+      "accessed": "2026-10-06"
+    },
+    {
+      "title": "ROMA: a guide to policy engagement and policy influence (2021)",
+      "organisation": "ODI",
+      "url": "https://odi.org/en/about/features/roma-a-guide-to-policy-engagement-and-policy-influence/",
+      "accessed": "2026-10-06"
+    },
+    {
+      "title": "Measuring the impact of information on mayors' policy decisions: evidence from Brazil (2019)",
+      "organisation": "J-PAL (Abdul Latif Jameel Poverty Action Lab)",
+      "url": "https://www.povertyactionlab.org/blog/11-25-19/measuring-impact-information-mayors-policy-decisions-evidence-brazil",
+      "accessed": "2026-10-06"
+    },
+    {
+      "title": "What happens when you train senior civil servants in econometrics? (2022)",
+      "organisation": "World Bank, Development Impact blog",
+      "url": "https://blogs.worldbank.org/en/impactevaluations/what-happens-when-you-train-senior-civil-servants-econometrics",
+      "accessed": "2026-10-06"
+    }
+  ],
+  "status": "draft"
+}

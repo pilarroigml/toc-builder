@@ -46,6 +46,17 @@ Sources deliberately diversified beyond J-PAL and IPA, at Pilar's request. Busin
 
 Checked and not used: "Rebound effects could offset more than half of avoided food loss and waste" (Nature Food, 2023) redirects to a sign-in page, so likely paywalled. Pret A Manger's end-of-day donation programme (suggested by Pilar) informed the food bank activity, but isn't cited because only self-reported company material was considered.
 
+### Example 4: getting research into health policy decisions
+
+The research topic (childhood vaccination) is invented for the example. The sources support how research uptake works, not any claim about vaccination methods.
+
+| Title | Organisation | URL | Date accessed | Used for |
+|-------|--------------|-----|---------------|----------|
+| Defining impact (ESRC impact toolkit) | UKRI, Economic and Social Research Council | https://www.ukri.org/councils/esrc/impact-toolkit-for-economic-and-social-sciences/defining-impact/ | 2026-10-06 | Structure of the outcomes: conceptual (understanding), capacity building (skills), instrumental (changes to plans and budgets). Knowledge exchange as two-way, and co-producing research questions with users. |
+| ROMA: a guide to policy engagement and policy influence (9 March 2021) | ODI | https://odi.org/en/about/features/roma-a-guide-to-policy-engagement-and-policy-influence/ | 2026-10-06 | Treating influence as a strategy: diagnose the problem, set realistic outcomes focused on stakeholders, monitor and learn. Policy change includes budgets and plans, not only laws. |
+| Measuring the impact of information on mayors' policy decisions: evidence from Brazil (Hjort, Moreira, Rao and Santini; J-PAL blog, 25 November 2019) | J-PAL | https://www.povertyactionlab.org/blog/11-25-19/measuring-impact-information-mayors-policy-decisions-evidence-brazil | 2026-10-06 | Model for the short evidence sessions: mayors who attended a 45-minute session on evidence were 10 percentage points (33%) more likely to adopt the policy 15 to 24 months later. Basis for a modest uptake target. |
+| What happens when you train senior civil servants in econometrics? (Goldstein, 24 February 2022) | World Bank, Development Impact blog | https://blogs.worldbank.org/en/impactevaluations/what-happens-when-you-train-senior-civil-servants-econometrics | 2026-10-06 | Model for training ministry analysts: randomised training in Pakistan raised support for quantitative evidence and willingness to pay for causal evaluations. |
+
 ## World Bank Gender Innovation Labs, checked 6 October 2026
 
 Tip for reading their briefs: each brief's page on documents.worldbank.org has a "TXT" link with a plain-text version, which avoids downloading the PDF.
