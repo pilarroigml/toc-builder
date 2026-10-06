@@ -1,0 +1,160 @@
+{
+  "id": "mobile-savings-farmers",
+  "title": "Mobile savings groups for smallholder farmers",
+  "illustrative": true,
+  "sectors": ["development", "financial-inclusion"],
+  "userTypes": ["small-ngo"],
+  "summary": "A small NGO works with farmers' savings groups in a rural district. It helps them save through mobile money, with a wallet that stays locked until planting season, so farmers have cash for seed and fertiliser when they need it.",
+  "whyThisWorks": "The problem names a timing gap: farmers have cash at harvest but not at planting. Each activity answers part of that gap. Outputs are counts the NGO controls. Outcomes separate saving behaviour (short-term) from coping and investment (medium-term). The assumptions draw on evaluation lessons: savings groups tend to protect households in bad times more than they raise average income, and pressure to share money with friends and family can undo saving.",
+  "levels": {
+    "problem": {
+      "items": [
+        "Most smallholder farmers have cash at harvest but not at planting. Savings kept at home get spent or shared, and banks are far away."
+      ],
+      "assumptions": [
+        "Farmers want to buy more inputs if they have cash at planting"
+      ],
+      "indicators": [
+        {
+          "text": "Share of member households using fertiliser",
+          "baseline": "35% (2025 survey)",
+          "target": "Tracked for context. Targets are set at outcome level.",
+          "meansOfVerification": "Baseline household survey"
+        }
+      ]
+    },
+    "activities": {
+      "items": [
+        "Help 60 savings groups move their savings onto mobile money",
+        "Offer a planting-savings wallet that stays locked until planting season",
+        "Train group treasurers to keep digital records",
+        "Hold input fairs with local agro-dealers before planting"
+      ],
+      "assumptions": [
+        "Mobile network and cash-out agents reach every village",
+        "A mobile money provider agrees to offer a locked wallet"
+      ],
+      "indicators": [
+        {
+          "text": "Number of savings groups saving through mobile money",
+          "baseline": "0",
+          "target": "60 groups by the end of year 1",
+          "meansOfVerification": "Mobile money provider reports"
+        }
+      ]
+    },
+    "outputs": {
+      "items": [
+        "60 groups, about 1,500 members, saving through mobile money",
+        "1,200 members with a planting-savings wallet",
+        "60 treasurers trained and keeping digital records",
+        "Two input fairs a year in each of 6 market towns"
+      ],
+      "assumptions": [
+        "Fees stay low enough for small deposits",
+        "Members trust the mobile money provider"
+      ],
+      "indicators": [
+        {
+          "text": "Members with an active planting-savings wallet",
+          "baseline": "0",
+          "target": "1,200 by the end of year 1",
+          "meansOfVerification": "Provider account data, shared with members' consent"
+        }
+      ]
+    },
+    "outcomesShort": {
+      "items": [
+        "Members save more and keep savings until planting",
+        "More members buy fertiliser and improved seed on time",
+        "Group records are accurate and easy to check"
+      ],
+      "assumptions": [
+        "Family and friends don't pressure members to share savings"
+      ],
+      "indicators": [
+        {
+          "text": "Average member savings balance at the start of planting season",
+          "baseline": "€12 equivalent (2025)",
+          "target": "€25 equivalent by 2027",
+          "meansOfVerification": "Provider account data"
+        }
+      ]
+    },
+    "outcomesMedium": {
+      "items": [
+        "Households cope better with bad harvests and lean seasons",
+        "Farm investment rises among members who want to invest"
+      ],
+      "assumptions": [
+        "Input and crop prices stay within a normal range",
+        "Rains are not poor several years in a row"
+      ],
+      "indicators": [
+        {
+          "text": "Share of member households skipping meals in the lean season",
+          "baseline": "40% (2025)",
+          "target": "25% by 2028",
+          "meansOfVerification": "Household survey before and after the lean season"
+        }
+      ]
+    },
+    "impact": {
+      "items": [
+        "Smallholder households have enough food and income all year"
+      ],
+      "assumptions": [
+        "No market or climate shock bigger than savings can absorb"
+      ],
+      "indicators": [
+        {
+          "text": "Share of households short of food during the lean season",
+          "baseline": "45% (2025)",
+          "target": "Under 30% by 2030",
+          "meansOfVerification": "District food security assessments"
+        }
+      ]
+    }
+  },
+  "draftPairs": [
+    {
+      "level": "outcomesMedium",
+      "weak": "Farmers escape poverty through savings",
+      "improved": "Households cope better with bad harvests and lean seasons",
+      "why": "Evaluations of savings groups found they mostly help families absorb shocks, not raise average income. An outcome should match what the evidence suggests is realistic."
+    },
+    {
+      "level": "activities",
+      "weak": "Promote financial inclusion",
+      "improved": "Help 60 savings groups move their savings onto mobile money",
+      "why": "The first version is a goal, not something the team does. The improved version says what happens, with whom and how many."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The impact of savings groups on the lives of the rural poor in Ghana, Malawi and Uganda (2008 to 2011)",
+      "organisation": "IPA (Innovations for Poverty Action)",
+      "url": "https://poverty-action.org/study/impact-savings-groups-lives-rural-poor-ghana-malawi-and-uganda",
+      "accessed": "2026-10-06"
+    },
+    {
+      "title": "Facilitating savings among smallholder farmers to smooth or increase consumption (policy insight, May 2019)",
+      "organisation": "J-PAL (Abdul Latif Jameel Poverty Action Lab)",
+      "url": "https://www.povertyactionlab.org/policy-insight/facilitating-savings-among-smallholder-farmers-smooth-or-increase-consumption",
+      "accessed": "2026-10-06"
+    },
+    {
+      "title": "Mobile money and agricultural investment in Mozambique",
+      "organisation": "J-PAL (Abdul Latif Jameel Poverty Action Lab)",
+      "url": "https://www.povertyactionlab.org/evaluation/mobile-money-and-agricultural-investment-mozambique",
+      "accessed": "2026-10-06"
+    },
+    {
+      "title": "Increasing financial inclusion via group loans and digitized savings records in Malawi and Uganda (2024 to 2026, results pending)",
+      "organisation": "IPA (Innovations for Poverty Action)",
+      "url": "https://poverty-action.org/increasing-financial-inclusion-group-loans-and-digitized-savings-records-malawi-and-uganda",
+      "accessed": "2026-10-06"
+    }
+  ],
+  "status": "draft"
+}
