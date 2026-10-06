@@ -80,3 +80,16 @@ Short names used below:
 ## For the practitioner review
 
 The **own writing** parts carry no specific source. They follow common practice but are the parts most worth checking.
+
+## Tailored for social entrepreneurs (added 6 October 2026)
+
+The definitions are shared with the main version. Strong examples follow Example 3 (cutting food waste in restaurants and shops).
+
+| Level | Strong example | Weak example and fix | Tip |
+|---|---|---|---|
+| Problem | Example 3, scale from UNEP | Own writing | Problem before product, from NPC. Investor framing is own writing |
+| Activities | Example 3, modelled on Champions 12.3 and WRAP (measure, report, train) | Own writing | "Prevention first" is own writing (no source checked yet) |
+| Outputs | Example 3 | Own writing | Business measures versus impact, from Impact Frontiers (paraphrased idea only). The "would it still look good" test is own writing |
+| Short-term outcomes | Example 3, 25% reduction in line with Champions 12.3's average | Own writing | Compare with own baseline, from WRAP measurement guidance |
+| Medium-term outcomes | Example 3 | The competing-apps warning is from Decision Sciences 2026 | "Contribution", from Impact Frontiers. Rebound risk from Nature Communications 2020 and Decision Sciences 2026 |
+| Impact | EU 2030 target, from the European Commission | Own writing | Linking to shared external goals is own writing, using EU targets |

@@ -1,6 +1,11 @@
 # Project log
 
-## Extra — "Who are you building this for?" mode (6 October 2026, waiting for Pilar's check)
+## Extra — "Who are you building this for?" mode and tailored guidance (6 October 2026, in progress)
+
+### Update: fully tailored guidance (Pilar's decision)
+- The "In a similar project" section was removed. Instead, each level in `content/fields.en.json` can have `variants` per user type, with their own strong example, weak example, tip, sources and status. The definition stays shared. Missing variants fall back to the main (NGO) version.
+- Done: social entrepreneur (6 levels). Next: researcher. Later: student, community group and individual, once Examples 5 and 6 exist.
+- The panel shows "Tailored for: [user type]" when a variant is used, and a "See worked examples in full" link.
 
 ### 1. What now exists and where
 - A dropdown above the progress steps (`src/components/ModeSelect.tsx`) with Not sure yet, NGO, Student, Researcher, Social entrepreneur, Community group and Individual. It is remembered on the device (`src/lib/mode.ts`).

@@ -79,9 +79,8 @@ export const UiSchema = z.strictObject({
   assumesLabel: text,
   modeLabel: text,
   modeNotSure: text,
-  similarHeading: text,
-  similarAnother: text,
-  similarSeeAll: text,
+  tailoredFor: text,
+  seeExampleInFull: text,
   progressLabel: text,
   stepOf: text,
   goToStep: text,
@@ -142,18 +141,33 @@ export const UiSchema = z.strictObject({
 
 // ---------- Guidance per level (content/fields.en.json) ----------
 
-export const FieldGuidanceSchema = z.strictObject({
-  level: LevelId,
-  definition: text,
+const WeakExampleSchema = z.strictObject({
+  text,
+  whatIsWrong: text,
+  improved: text,
+})
+
+// A version of the guidance tailored to one user type (e.g. social entrepreneur).
+// The definition stays shared; examples, tip and sources change.
+const GuidanceVariantSchema = z.strictObject({
   strongExample: text,
-  weakExample: z.strictObject({
-    text,
-    whatIsWrong: text,
-    improved: text,
-  }),
+  weakExample: WeakExampleSchema,
   tip: text,
   sources: Sources,
   status: Status,
+})
+
+export const FieldGuidanceSchema = z.strictObject({
+  level: LevelId,
+  definition: text,
+  // The main version (written for NGOs, using the girls' secondary school story).
+  strongExample: text,
+  weakExample: WeakExampleSchema,
+  tip: text,
+  sources: Sources,
+  status: Status,
+  // Optional tailored versions, keyed by user type. Missing ones fall back to the main version.
+  variants: z.partialRecord(z.enum(USER_TYPES), GuidanceVariantSchema).optional(),
 })
 
 export const FieldsSchema = z.strictObject({

@@ -53,9 +53,8 @@
 
   "modeLabel": "Who are you building this for?",
   "modeNotSure": "Not sure yet",
-  "similarHeading": "In a similar project",
-  "similarAnother": "Show another example",
-  "similarSeeAll": "See full examples",
+  "tailoredFor": "Tailored for:",
+  "seeExampleInFull": "See worked examples in full",
 
   "progressLabel": "Progress",
   "stepOf": "Step {current} of {total} · {level}",

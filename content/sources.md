@@ -59,6 +59,16 @@ The research topic (childhood vaccination) is invented for the example. The sour
 | Measuring the impact of information on mayors' policy decisions: evidence from Brazil (Hjort, Moreira, Rao and Santini; J-PAL blog, 25 November 2019) | J-PAL | https://www.povertyactionlab.org/blog/11-25-19/measuring-impact-information-mayors-policy-decisions-evidence-brazil | 2026-10-06 | Model for the short evidence sessions: mayors who attended a 45-minute session on evidence were 10 percentage points (33%) more likely to adopt the policy 15 to 24 months later. Basis for a modest uptake target. |
 | What happens when you train senior civil servants in econometrics? (Goldstein, 24 February 2022) | World Bank, Development Impact blog | https://blogs.worldbank.org/en/impactevaluations/what-happens-when-you-train-senior-civil-servants-econometrics | 2026-10-06 | Model for training ministry analysts: randomised training in Pakistan raised support for quantitative evidence and willingness to pay for causal evaluations. |
 
+### Guidance tailored for social entrepreneurs (variants in content/fields.en.json)
+
+Uses the Example 3 sources above (UNEP, European Commission, Champions 12.3, WRAP, Nature Communications 2020, Decision Sciences 2026), BetterEvaluation's Logframe page and NPC, plus:
+
+| Title | Organisation | URL | Date accessed | Used for |
+|-------|--------------|-----|---------------|----------|
+| Five dimensions of impact | Impact Frontiers (programme of Bridges Impact Foundation) | https://impactfrontiers.org/norms/five-dimensions-of-impact/ | 2026-10-06 | The idea of "contribution" (would the change have happened anyway without the enterprise?) in the medium-term outcomes tip, and separating business measures from impact in the outputs tip. **Reuse terms: "All rights reserved", no open licence.** So the five-dimension framework is NOT reproduced as a list in the tool. Only one idea is paraphrased, with a link. |
+
+Checked and not used: UNDP SDG Impact Standards for Enterprises. Its page (sdgimpact.undp.org/enterprise) now redirects to a general UNDP SDG private finance homepage.
+
 ## World Bank Gender Innovation Labs, checked 6 October 2026
 
 Tip for reading their briefs: each brief's page on documents.worldbank.org has a "TXT" link with a plain-text version, which avoids downloading the PDF.

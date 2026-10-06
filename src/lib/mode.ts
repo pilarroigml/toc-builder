@@ -1,16 +1,14 @@
 // "Who are you building this for?": the user's type (NGO, social entrepreneur, researcher...).
-// It decides which worked example the guidance panel shows as "a similar project",
-// and which filter the gallery starts with. It never changes the structure of the tool.
-// The choice is remembered on this device.
+// It decides which tailored version of the guidance is shown (see "variants" in
+// content/fields.en.json) and which filter the gallery starts with.
+// It never changes the structure of the tool. The choice is remembered on this device.
 
-import type { Example } from '../schema/content'
 import { USER_TYPES } from '../schema/lists'
-import { examples } from './content'
 
 // ===== EDITABLE SETTINGS =====
 const STORAGE_KEY = 'toc-builder:mode'
-// The example the guidance panel's main examples are already based on (the running story).
-// It is shown last for matching user types, since its story is already on screen.
+// The example the main guidance is based on (the running story).
+// It is also offered when the diagram is still empty.
 export const RUNNING_STORY_EXAMPLE_ID = 'girls-secondary-school'
 // User types offered in the "Who are you building this for?" list.
 // ("funder" is left out for now: reviewing applications is a later feature.)
@@ -35,17 +33,4 @@ export function saveMode(mode: Mode): void {
   } catch {
     // Storage blocked: the choice simply won't be remembered.
   }
-}
-
-// The examples to show as "a similar project", best match first.
-// Matching examples come first, with the running story last. With no match, the running story.
-export function examplesForMode(mode: Mode): Example[] {
-  const running = examples.filter((ex) => ex.id === RUNNING_STORY_EXAMPLE_ID)
-  if (mode === '') return running
-  const matching = examples.filter((ex) => ex.userTypes.includes(mode as Example['userTypes'][number]))
-  if (matching.length === 0) return running
-  return [
-    ...matching.filter((ex) => ex.id !== RUNNING_STORY_EXAMPLE_ID),
-    ...matching.filter((ex) => ex.id === RUNNING_STORY_EXAMPLE_ID),
-  ]
 }

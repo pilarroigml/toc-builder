@@ -54,7 +54,33 @@
           "accessed": "2026-10-06"
         }
       ],
-      "status": "draft"
+      "status": "draft",
+      "variants": {
+        "entrepreneur": {
+          "strongExample": "Restaurants and food shops in the city throw away about 1 in 6 kg of the food they buy, mostly from over-ordering, large portions and unsold stock. It costs them money and adds to landfill emissions.",
+          "weakExample": {
+            "text": "There's no app connecting restaurants with people who want cheap food.",
+            "whatIsWrong": "This describes your product, not the problem. It assumes an app is the answer before showing how much food is wasted, where and why.",
+            "improved": "City restaurants and shops waste a large share of the food they buy, mostly from over-ordering and unsold stock, and it costs them money."
+          },
+          "tip": "Investors will ask about your market; your theory of change asks about the problem. Describe it from the point of view of the people or places affected first, then show where your business fits. A well-described problem also shows the size of the opportunity.",
+          "sources": [
+            {
+              "title": "Theory of change in ten steps",
+              "organisation": "NPC (New Philanthropy Capital)",
+              "url": "https://www.thinknpc.org/resource-hub/ten-steps/",
+              "accessed": "2026-10-06"
+            },
+            {
+              "title": "Food Waste Index Report 2024",
+              "organisation": "UNEP (United Nations Environment Programme)",
+              "url": "https://www.unep.org/resources/publication/food-waste-index-report-2024",
+              "accessed": "2026-10-06"
+            }
+          ],
+          "status": "draft"
+        }
+      }
     },
     {
       "level": "activities",
@@ -104,7 +130,33 @@
           "accessed": "2026-10-06"
         }
       ],
-      "status": "draft"
+      "status": "draft",
+      "variants": {
+        "entrepreneur": {
+          "strongExample": "Install waste-measuring scales in 40 restaurant kitchens and send weekly reports on what they waste and what it costs. Run an app that sells unsold food at a discount at closing time, and pass what still does not sell to a food bank.",
+          "weakExample": {
+            "text": "Scale our platform across Europe.",
+            "whatIsWrong": "This is a growth ambition, not something the team does in the next year or two. It doesn't say what the business will actually do, or for whom.",
+            "improved": "Sign up 40 restaurant kitchens in one city and install waste-measuring scales."
+          },
+          "tip": "List the activities that create your impact, not every business function. Marketing and fundraising matter, but include them only if they lead directly to an output here. Where you can, put prevention first: cutting waste in the kitchen does more than selling the surplus afterwards.",
+          "sources": [
+            {
+              "title": "The business case for reducing food loss and waste: restaurants (2019)",
+              "organisation": "Champions 12.3",
+              "url": "https://champions123.org/release-new-report-finds-restaurants-save-significant-money-fighting-food-waste",
+              "accessed": "2026-10-06"
+            },
+            {
+              "title": "Measuring and reporting food waste in hospitality and food service (2018)",
+              "organisation": "WRAP",
+              "url": "https://www.wrap.ngo/resources/measuring-and-reporting-food-waste-hospitality-and-food-service",
+              "accessed": "2026-10-06"
+            }
+          ],
+          "status": "draft"
+        }
+      }
     },
     {
       "level": "outputs",
@@ -136,7 +188,33 @@
           "accessed": "2026-10-06"
         }
       ],
-      "status": "draft"
+      "status": "draft",
+      "variants": {
+        "entrepreneur": {
+          "strongExample": "40 kitchens measuring their waste and receiving weekly reports, and 150 restaurants and shops listing surplus on the app each month.",
+          "weakExample": {
+            "text": "€500,000 in app sales in year 2.",
+            "whatIsWrong": "Sales show the business is growing, not what it delivers that reduces waste. Keep revenue as a business outcome alongside impact, not in place of it.",
+            "improved": "150 businesses actively listing surplus food on the app each month."
+          },
+          "tip": "Separate what the business sells from what creates impact. A useful test: if sales went up but no food was saved, would this output still look good? If yes, it is a business measure, not an impact output.",
+          "sources": [
+            {
+              "title": "Logframe",
+              "organisation": "BetterEvaluation",
+              "url": "https://www.betterevaluation.org/methods-approaches/methods/logframe",
+              "accessed": "2026-10-06"
+            },
+            {
+              "title": "Five dimensions of impact",
+              "organisation": "Impact Frontiers",
+              "url": "https://impactfrontiers.org/norms/five-dimensions-of-impact/",
+              "accessed": "2026-10-06"
+            }
+          ],
+          "status": "draft"
+        }
+      }
     },
     {
       "level": "outcomesShort",
@@ -162,7 +240,33 @@
           "accessed": "2026-10-06"
         }
       ],
-      "status": "draft"
+      "status": "draft",
+      "variants": {
+        "entrepreneur": {
+          "strongExample": "Within a year, partner kitchens order and prepare closer to what they sell, cutting food waste per meal from 120 g to 90 g.",
+          "weakExample": {
+            "text": "Users love the app.",
+            "whatIsWrong": "Customer satisfaction matters for the business, but it is not a change in food waste. You can have happy users and no less waste.",
+            "improved": "More surplus food is sold or donated instead of thrown away."
+          },
+          "tip": "Measure the change your business aims for, not only how customers feel about the product. Compare with each business's own starting point, such as its first month of measuring, so you can show what changed.",
+          "sources": [
+            {
+              "title": "The business case for reducing food loss and waste: restaurants (2019)",
+              "organisation": "Champions 12.3",
+              "url": "https://champions123.org/release-new-report-finds-restaurants-save-significant-money-fighting-food-waste",
+              "accessed": "2026-10-06"
+            },
+            {
+              "title": "Measuring and reporting food waste in hospitality and food service (2018)",
+              "organisation": "WRAP",
+              "url": "https://www.wrap.ngo/resources/measuring-and-reporting-food-waste-hospitality-and-food-service",
+              "accessed": "2026-10-06"
+            }
+          ],
+          "status": "draft"
+        }
+      }
     },
     {
       "level": "outcomesMedium",
@@ -194,7 +298,39 @@
           "accessed": "2026-10-06"
         }
       ],
-      "status": "draft"
+      "status": "draft",
+      "variants": {
+        "entrepreneur": {
+          "strongExample": "Partner businesses cut food waste by a quarter and save money, and the enterprise covers its own costs from subscriptions and fees.",
+          "weakExample": {
+            "text": "We become the market leader.",
+            "whatIsWrong": "Market share is a business goal, not a change for the people or places you serve. Research also suggests that too many competing surplus-food apps can increase waste, so winning the market doesn't guarantee impact.",
+            "improved": "Partner businesses cut their food waste by a quarter and save money."
+          },
+          "tip": "Put financial sustainability next to impact, not instead of it. Ask whether the change would have happened anyway without your business, and name the risk that growth works against impact, for example businesses cooking extra just to fill app listings.",
+          "sources": [
+            {
+              "title": "Five dimensions of impact",
+              "organisation": "Impact Frontiers",
+              "url": "https://impactfrontiers.org/norms/five-dimensions-of-impact/",
+              "accessed": "2026-10-06"
+            },
+            {
+              "title": "Can surplus-food apps have too much competition? (Wei and Hu, Decision Sciences, 2026)",
+              "organisation": "University of New Hampshire",
+              "url": "https://www.unh.edu/news/can-surplus-food-apps-have-too-much-competition",
+              "accessed": "2026-10-06"
+            },
+            {
+              "title": "Social and environmental analysis of food waste abatement via the peer-to-peer sharing economy (Makov and others, 2020)",
+              "organisation": "Nature Communications",
+              "url": "https://www.nature.com/articles/s41467-020-14899-5",
+              "accessed": "2026-10-06"
+            }
+          ],
+          "status": "draft"
+        }
+      }
     },
     {
       "level": "impact",
@@ -226,7 +362,33 @@
           "accessed": "2026-10-06"
         }
       ],
-      "status": "draft"
+      "status": "draft",
+      "variants": {
+        "entrepreneur": {
+          "strongExample": "Food businesses in the city waste 30% less food per person by 2030, in line with the EU target.",
+          "weakExample": {
+            "text": "A world without food waste.",
+            "whatIsWrong": "It's too broad to show what your business contributes or to measure progress. Investors and funders can't tell what success would look like.",
+            "improved": "Food businesses in our city waste much less food each year, measured against the 2021 to 2023 average."
+          },
+          "tip": "Link your impact to a goal others already track, such as the EU binding 2030 food waste targets. It gives investors and funders a shared yardstick, and keeps you honest about contributing alongside others rather than claiming the whole change.",
+          "sources": [
+            {
+              "title": "Food waste reduction targets (Directive (EU) 2025/1892)",
+              "organisation": "European Commission",
+              "url": "https://food.ec.europa.eu/food-safety/food-waste/eu-food-waste-relevant-legislation/food-waste-reduction-targets_en",
+              "accessed": "2026-10-06"
+            },
+            {
+              "title": "Food Waste Index Report 2024",
+              "organisation": "UNEP (United Nations Environment Programme)",
+              "url": "https://www.unep.org/resources/publication/food-waste-index-report-2024",
+              "accessed": "2026-10-06"
+            }
+          ],
+          "status": "draft"
+        }
+      }
     }
   ]
 }
