@@ -1,5 +1,25 @@
 # Project log
 
+## Step 3 — Guidance panel (part 1 of 2: the panel, 6 October 2026)
+
+### 1. What now exists and where
+- `src/components/GuidancePanel.tsx` shows the guidance for the current level: definition, strong example (green tint), weak example with what's wrong and an improved version (warm tint), tip, sources (open in a new tab) and content status.
+- On a computer it sits beside the form and stays in view while scrolling. On a phone it appears just below the main answer box.
+- Levels without guidance yet show "Guidance for this level is being written…" (text in `content/ui.en.json`).
+- Only Problem has guidance so far. Part 2 adds guidance for the other five levels.
+- The local preview now checks for file changes every 0.3 seconds (`vite.config.ts`), which fixes the "preview missed an edit" problem.
+
+### 2. How to run or open it
+- `npm run dev`, then open `http://localhost:5173/toc-builder/`. Go to step 1 to see the guidance.
+
+### 3. How I'd know it broke
+- The guidance card is empty or missing on step 1.
+- A source link doesn't open. The monthly link check (Step 8) will catch dead links.
+
+### 4. How to fix or change it
+- Guidance text is in `content/fields.en.json`, one block per level.
+- Wording such as "Guidance" or "Strong example" is in `content/ui.en.json`.
+
 ## Step 2 — Guided form with autosave (done locally, 6 October 2026, waiting for Pilar's test)
 
 ### 1. What now exists and where

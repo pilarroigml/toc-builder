@@ -16,4 +16,9 @@ export default defineConfig({
   // validateContent() checks every file in /content and stops the build if one is wrong.
   plugins: [validateContent(), react(), tailwindcss()],
   base: `/${REPO_NAME}/`,
+  // Local preview only: check files for changes regularly instead of relying on
+  // Windows change notifications, which sometimes miss quick edits.
+  server: {
+    watch: { usePolling: true, interval: 300 },
+  },
 })

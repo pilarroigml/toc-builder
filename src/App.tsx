@@ -9,6 +9,7 @@ import { clearDraft, emptyDraft, levelHasContent, loadDraft, saveDraft, type Lev
 import ProgressSteps from './components/ProgressSteps'
 import LevelForm from './components/LevelForm'
 import ClearDataButton from './components/ClearDataButton'
+import GuidancePanel from './components/GuidancePanel'
 
 export default function App() {
   // Start from whatever was saved last time on this device.
@@ -45,7 +46,7 @@ export default function App() {
   }
 
   return (
-    <div className="mx-auto max-w-2xl px-4 py-8 sm:py-12">
+    <div className="mx-auto max-w-5xl px-4 py-8 sm:py-12">
       <header className="flex flex-wrap items-start justify-between gap-2">
         <div>
           <h1 className="text-2xl font-semibold">{ui.appTitle}</h1>
@@ -58,13 +59,22 @@ export default function App() {
         <ProgressSteps current={step} hasContent={LEVEL_IDS.map((id) => levelHasContent(draft.levels[id]))} onSelect={goTo} />
       </div>
 
-      <main className="mt-6">
+      {/* Two columns on wide screens: the form on the left, guidance on the right.
+          On phones everything is one column and the guidance sits inside the form. */}
+      <div className="mt-6 lg:grid lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] lg:gap-10">
+      <main>
         <h2 ref={headingRef} tabIndex={-1} className="text-2xl font-semibold text-accent">
           {ui.levelNames[level]}
         </h2>
         <div className="mt-4">
           {/* "key" makes the form start fresh for each level */}
-          <LevelForm key={level} level={level} value={draft.levels[level]} onChange={updateLevel} />
+          <LevelForm
+            key={level}
+            level={level}
+            value={draft.levels[level]}
+            onChange={updateLevel}
+            guidanceOnSmallScreens={<GuidancePanel level={level} />}
+          />
         </div>
 
         {saveWorks ? (
@@ -100,6 +110,14 @@ export default function App() {
           )}
         </div>
       </main>
+
+      {/* Guidance beside the form, wide screens only. It stays in view while scrolling. */}
+      <div className="hidden lg:block">
+        <div className="sticky top-6">
+          <GuidancePanel level={level} />
+        </div>
+      </div>
+      </div>
     </div>
   )
 }

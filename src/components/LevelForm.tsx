@@ -1,6 +1,6 @@
 // The form for one level: the main answer, its assumptions, and its indicators.
 
-import { useId } from 'react'
+import { useId, type ReactNode } from 'react'
 import type { LevelId } from '../schema/content'
 import { emptyIndicator, type IndicatorDraft, type LevelDraft } from '../lib/draft'
 import { fill, ui } from '../lib/content'
@@ -9,13 +9,16 @@ type Props = {
   level: LevelId
   value: LevelDraft
   onChange: (value: LevelDraft) => void
+  // Guidance shown right after the main answer on phones and small screens.
+  // (On wide screens it sits beside the form instead, see App.tsx.)
+  guidanceOnSmallScreens?: ReactNode
 }
 
 // Shared look for text boxes.
 const boxClass =
   'mt-1 block w-full rounded-md border border-line bg-white px-3 py-2 text-base text-ink placeholder:text-muted'
 
-export default function LevelForm({ level, value, onChange }: Props) {
+export default function LevelForm({ level, value, onChange, guidanceOnSmallScreens }: Props) {
   const id = useId()
   const prompt = ui.levelPrompts[level]
 
@@ -44,6 +47,8 @@ export default function LevelForm({ level, value, onChange }: Props) {
           className={boxClass}
         />
       </div>
+
+      {guidanceOnSmallScreens && <div className="lg:hidden">{guidanceOnSmallScreens}</div>}
 
       {/* Assumptions */}
       <div>
