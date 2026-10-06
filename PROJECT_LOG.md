@@ -1,6 +1,17 @@
 # Project log
 
-## Step 3 — Guidance panel (part 1 of 2: the panel, 6 October 2026)
+## Step 3 — Guidance panel (done, 6 October 2026)
+
+### Part 2: guidance content
+- All six levels have draft guidance in `content/fields.en.json`, written as one running story (keeping girls in secondary school).
+- Examples are invented but modelled on evaluated programmes (J-PAL, NBER, Population Council, World Bank Gender Innovation Labs, World Bank Economic Review). Evidence on household work comes from UNICEF and the World Bank.
+- Every card ends with a note that evidence is context-specific.
+- `docs/SOURCE-MAP.md` shows which source each part comes from, and which parts are own writing.
+- `content/sources.md` logs every source, those checked and not used, open gaps, and why the 2016 Liberia blog was removed.
+- Example 1 moved from "needs-review" to "draft".
+- Next: Pilar's expert review after v1 (she worked with the Africa Gender Innovation Lab in 2026).
+
+### Part 1: the panel
 
 ### 1. What now exists and where
 - `src/components/GuidancePanel.tsx` shows the guidance for the current level: definition, strong example (green tint), weak example with what's wrong and an improved version (warm tint), tip, sources (open in a new tab) and content status.
