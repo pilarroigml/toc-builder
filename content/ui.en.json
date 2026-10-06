@@ -1,6 +1,59 @@
 {
   "appTitle": "Theory of Change Builder",
-  "intro": "Work in progress. This page shows the first piece of guidance and the first worked example, to test the content files.",
+  "intro": "Build your theory of change one level at a time. Your work is saved on this device only.",
+
+  "progressLabel": "Progress",
+  "stepOf": "Step {current} of {total} · {level}",
+  "goToStep": "Go to step {number}, {level}",
+  "stepDone": "started",
+  "stepCurrent": "current step",
+  "back": "Back",
+  "nextTo": "Next: {level}",
+  "lastStepNotice": "This is the last level. You can go back to any step to keep editing.",
+
+  "statementsLabel": "Your answer",
+  "onePerLine": "One per line.",
+  "assumptionsHint": "What else must be true for this level to work? One per line.",
+  "indicatorsHint": "How will you know this level has been achieved?",
+  "indicatorLabel": "Indicator",
+  "indicatorNumber": "Indicator {number}",
+  "addIndicator": "Add an indicator",
+  "removeIndicator": "Remove indicator {number}",
+
+  "savedNotice": "Saved on this device. Nothing you type leaves your browser.",
+  "saveFailed": "Your browser is blocking storage, so your work won't be kept if you close this page.",
+  "clearData": "Clear my data",
+  "clearConfirm": "This deletes everything you've typed, on this device. It can't be undone.",
+  "clearConfirmYes": "Yes, clear everything",
+  "cancel": "Cancel",
+
+  "levelPrompts": {
+    "problem": {
+      "question": "What problem do you want to change?",
+      "hint": "Say who is affected, where, how much, and why it happens. Don't mention your project yet."
+    },
+    "activities": {
+      "question": "What will you do?",
+      "hint": "The main things your team will do. Keep to the essentials."
+    },
+    "outputs": {
+      "question": "What will your project deliver directly?",
+      "hint": "Things you produce or provide, and can count."
+    },
+    "outcomesShort": {
+      "question": "What will change first?",
+      "hint": "Early changes in knowledge, attitudes, skills or behaviour among the people you work with."
+    },
+    "outcomesMedium": {
+      "question": "What will change after that?",
+      "hint": "Changes that build on the first ones, usually within the life of the project."
+    },
+    "impact": {
+      "question": "What long-term change are you contributing to?",
+      "hint": "The lasting change you hope to see. Your project contributes to it but doesn't control it alone."
+    }
+  },
+
   "guidanceHeading": "Guidance",
   "definitionLabel": "What it is",
   "strongExampleLabel": "Strong example",

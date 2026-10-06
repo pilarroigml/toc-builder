@@ -1,128 +1,105 @@
-// The main screen. For Step 1 it shows the content as plain text,
-// so we can check that the content files load and display correctly.
+// The main screen: the guided form, one level per screen.
+// Everything the user types is saved on this device as they type (see src/lib/draft.ts).
 // All words shown to users come from /content, never typed here.
 
+import { useEffect, useRef, useState } from 'react'
 import { LEVEL_IDS } from './schema/lists'
-import { examples, fields, ui } from './lib/content'
-import SourceList from './components/SourceList'
+import { fill, ui } from './lib/content'
+import { clearDraft, emptyDraft, levelHasContent, loadDraft, saveDraft, type LevelDraft } from './lib/draft'
+import ProgressSteps from './components/ProgressSteps'
+import LevelForm from './components/LevelForm'
+import ClearDataButton from './components/ClearDataButton'
 
 export default function App() {
+  // Start from whatever was saved last time on this device.
+  const [draft, setDraft] = useState(loadDraft)
+  const [saveWorks, setSaveWorks] = useState(true)
+  const headingRef = useRef<HTMLHeadingElement>(null)
+  const isFirstRender = useRef(true)
+
+  const step = draft.currentStep
+  const level = LEVEL_IDS[step]
+  const isLast = step === LEVEL_IDS.length - 1
+
+  // Autosave: every change is saved straight away.
+  useEffect(() => {
+    setSaveWorks(saveDraft(draft))
+  }, [draft])
+
+  // When moving to another level, go back to the top and move keyboard focus to the new heading.
+  useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false
+      return
+    }
+    window.scrollTo({ top: 0 })
+    headingRef.current?.focus()
+  }, [step])
+
+  const goTo = (target: number) => setDraft((d) => ({ ...d, currentStep: target }))
+  const updateLevel = (value: LevelDraft) =>
+    setDraft((d) => ({ ...d, levels: { ...d.levels, [level]: value } }))
+  const clearAll = () => {
+    clearDraft()
+    setDraft(emptyDraft())
+  }
+
   return (
-    <main className="mx-auto max-w-2xl px-4 py-12 font-sans leading-relaxed text-gray-900">
-      <h1 className="text-3xl font-semibold text-accent">{ui.appTitle}</h1>
-      <p className="mt-2 text-gray-700">{ui.intro}</p>
+    <div className="mx-auto max-w-2xl px-4 py-8 sm:py-12">
+      <header className="flex flex-wrap items-start justify-between gap-2">
+        <div>
+          <h1 className="text-2xl font-semibold">{ui.appTitle}</h1>
+          <p className="mt-1 text-muted">{ui.intro}</p>
+        </div>
+        <ClearDataButton onClear={clearAll} />
+      </header>
 
-      {/* Guidance for each level that has some */}
-      {fields.map((field) => (
-        <section key={field.level} className="mt-10">
-          <h2 className="text-2xl font-semibold">
-            {ui.guidanceHeading}: {ui.levelNames[field.level]}
-          </h2>
-          <p className="mt-1 text-sm text-gray-600">
-            {ui.statusLabel}: {ui.statusNames[field.status]}
+      <div className="mt-8">
+        <ProgressSteps current={step} hasContent={LEVEL_IDS.map((id) => levelHasContent(draft.levels[id]))} onSelect={goTo} />
+      </div>
+
+      <main className="mt-6">
+        <h2 ref={headingRef} tabIndex={-1} className="text-2xl font-semibold text-accent">
+          {ui.levelNames[level]}
+        </h2>
+        <div className="mt-4">
+          {/* "key" makes the form start fresh for each level */}
+          <LevelForm key={level} level={level} value={draft.levels[level]} onChange={updateLevel} />
+        </div>
+
+        {saveWorks ? (
+          <p className="mt-6 text-sm text-muted">{ui.savedNotice}</p>
+        ) : (
+          <p role="alert" className="mt-6 text-sm text-danger">
+            {ui.saveFailed}
           </p>
+        )}
 
-          <h3 className="mt-4 font-semibold">{ui.definitionLabel}</h3>
-          <p>{field.definition}</p>
-
-          <h3 className="mt-4 font-semibold">{ui.strongExampleLabel}</h3>
-          <p>{field.strongExample}</p>
-
-          <h3 className="mt-4 font-semibold">{ui.weakExampleLabel}</h3>
-          <p>{field.weakExample.text}</p>
-          <p className="mt-1">
-            <strong>{ui.whatIsWrongLabel}:</strong> {field.weakExample.whatIsWrong}
-          </p>
-          <p className="mt-1">
-            <strong>{ui.improvedLabel}:</strong> {field.weakExample.improved}
-          </p>
-
-          <h3 className="mt-4 font-semibold">{ui.tipLabel}</h3>
-          <p>{field.tip}</p>
-
-          <SourceList sources={field.sources} />
-        </section>
-      ))}
-
-      {/* Every worked example */}
-      {examples.map((example) => (
-        <section key={example.id} className="mt-12 border-t border-gray-300 pt-8">
-          <p className="text-sm uppercase tracking-wide text-gray-600">{ui.exampleHeading}</p>
-          <h2 className="text-2xl font-semibold">{example.title}</h2>
-          <p className="mt-2 rounded bg-amber-50 px-3 py-2 text-sm text-amber-900">
-            {ui.illustrativeNotice}
-          </p>
-          <p className="mt-1 text-sm text-gray-600">
-            {ui.statusLabel}: {ui.statusNames[example.status]}
-          </p>
-
-          <h3 className="mt-4 font-semibold">{ui.summaryLabel}</h3>
-          <p>{example.summary}</p>
-
-          {LEVEL_IDS.map((levelId) => {
-            const level = example.levels[levelId]
-            return (
-              <div key={levelId} className="mt-6">
-                <h3 className="text-lg font-semibold">{ui.levelNames[levelId]}</h3>
-                <ul className="list-disc pl-5">
-                  {level.items.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-                {level.assumptions.length > 0 && (
-                  <>
-                    <h4 className="mt-2 font-semibold">{ui.assumptionsLabel}</h4>
-                    <ul className="list-disc pl-5">
-                      {level.assumptions.map((a) => (
-                        <li key={a}>{a}</li>
-                      ))}
-                    </ul>
-                  </>
-                )}
-                {level.indicators.length > 0 && (
-                  <>
-                    <h4 className="mt-2 font-semibold">{ui.indicatorsLabel}</h4>
-                    <ul className="list-disc pl-5">
-                      {level.indicators.map((ind) => (
-                        <li key={ind.text}>
-                          {ind.text}
-                          <br />
-                          {ui.baselineLabel}: {ind.baseline}
-                          <br />
-                          {ui.targetLabel}: {ind.target}
-                          <br />
-                          {ui.meansOfVerificationLabel}: {ind.meansOfVerification}
-                        </li>
-                      ))}
-                    </ul>
-                  </>
-                )}
-              </div>
-            )
-          })}
-
-          <h3 className="mt-6 font-semibold">{ui.whyThisWorksLabel}</h3>
-          <p>{example.whyThisWorks}</p>
-
-          <h3 className="mt-6 font-semibold">{ui.draftPairsLabel}</h3>
-          {example.draftPairs.map((pair) => (
-            <div key={pair.weak} className="mt-3">
-              <p className="text-sm text-gray-600">{ui.levelNames[pair.level]}</p>
-              <p>
-                <strong>{ui.weakDraftLabel}:</strong> {pair.weak}
-              </p>
-              <p>
-                <strong>{ui.improvedDraftLabel}:</strong> {pair.improved}
-              </p>
-              <p>
-                <strong>{ui.whyLabel}:</strong> {pair.why}
-              </p>
-            </div>
-          ))}
-
-          <SourceList sources={example.sources} />
-        </section>
-      ))}
-    </main>
+        <div className="mt-6 flex items-center justify-between gap-4">
+          {step > 0 ? (
+            <button
+              type="button"
+              onClick={() => goTo(step - 1)}
+              className="min-h-11 rounded-md px-3 text-accent hover:bg-accent-tint"
+            >
+              ← {ui.back}
+            </button>
+          ) : (
+            <span />
+          )}
+          {isLast ? (
+            <p className="text-sm text-muted">{ui.lastStepNotice}</p>
+          ) : (
+            <button
+              type="button"
+              onClick={() => goTo(step + 1)}
+              className="min-h-11 rounded-md bg-accent px-5 font-medium text-white hover:bg-accent/90"
+            >
+              {fill(ui.nextTo, { level: ui.levelNames[LEVEL_IDS[step + 1]] })}
+            </button>
+          )}
+        </div>
+      </main>
+    </div>
   )
 }

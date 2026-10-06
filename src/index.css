@@ -2,8 +2,29 @@
 @import "tailwindcss";
 
 /* ===== EDITABLE SETTINGS =====
-   The one accent colour for the whole site. Change it here and it updates everywhere. */
+   All colours for the site. Change them here and they update everywhere.
+   Design decisions are explained in docs/DESIGN.md.
+   Keep text colours dark enough to pass accessibility contrast (WCAG AA). */
 @theme {
-  --color-accent: #1f6f5c;
+  --color-accent: #1f6f5c;       /* the one accent colour: buttons, headings, links */
+  --color-accent-tint: #e6f0ec;  /* pale accent, behind strong examples */
+  --color-paper: #faf7f2;        /* page background */
+  --color-ink: #24231f;          /* main text */
+  --color-muted: #5b5a55;        /* secondary text */
+  --color-line: #cfc8ba;         /* borders of text boxes */
+  --color-line-soft: #e4dfd5;    /* borders of cards, upcoming steps */
+  --color-weak-tint: #f7ece4;    /* warm tint, behind weak examples */
+  --color-danger: #9b2c1f;       /* "clear my data" confirmation */
 }
 /* ============================= */
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+}
+
+/* A clear outline around whatever has keyboard focus, so keyboard users always know where they are. */
+:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 2px;
+}

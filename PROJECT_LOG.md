@@ -1,5 +1,31 @@
 # Project log
 
+## Step 2 — Guided form with autosave (done locally, 6 October 2026, waiting for Pilar's test)
+
+### 1. What now exists and where
+- Design chosen (mix of A and B, green accent), recorded in `docs/DESIGN.md`. Colours at the top of `src/index.css`.
+- One screen per level, with numbered steps at the top (`src/components/ProgressSteps.tsx`). A step shows as filled once something is written in it.
+- The form for each level (`src/components/LevelForm.tsx`) has the main answer, assumptions (one per line) and indicators (indicator, baseline, target, how we'll know). Indicators can be added and removed.
+- Autosave to the browser's own storage on this device (`src/lib/draft.ts`). It also remembers which step you were on.
+- "Clear my data" with a confirmation (`src/components/ClearDataButton.tsx`).
+- All new wording in `content/ui.en.json`, including the question and hint for each level (`levelPrompts`). These are draft wording for review.
+- The Step 1 plain-text page is gone. The guidance comes back beside the form in Step 3.
+
+### 2. How to run or open it
+- `npm run dev`, then open `http://localhost:5173/toc-builder/`.
+
+### 3. How I'd know it broke
+- Text disappears after refreshing the page. Saving may be blocked, and a red message under the form says so.
+- A blank page means a code error. Press F12 and look at the "Console" tab for red messages.
+
+### 4. How to fix or change it
+- Questions, hints, button labels are all in `content/ui.en.json`.
+- Colours at the top of `src/index.css`.
+- Blank page in the local preview after edits? Stop and restart the preview (`npm run dev`). On Windows the preview occasionally misses a quick change.
+
+### Noted for later
+- Add a friendly "something went wrong" message instead of a blank page if the app ever crashes (Step 8).
+
 ## Step 1 — Content schema (done locally, 6 October 2026, waiting for Pilar's test)
 
 ### 1. What now exists and where

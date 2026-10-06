@@ -33,9 +33,38 @@ const statusNames = z.strictObject({
   'reviewed-by-practitioner': text,
 })
 
+const levelPrompts = z.strictObject(
+  Object.fromEntries(
+    LEVEL_IDS.map((id) => [id, z.strictObject({ question: text, hint: text })]),
+  ) as Record<(typeof LEVEL_IDS)[number], z.ZodObject<{ question: typeof text; hint: typeof text }>>,
+)
+
 export const UiSchema = z.strictObject({
   appTitle: text,
   intro: text,
+  progressLabel: text,
+  stepOf: text,
+  goToStep: text,
+  stepDone: text,
+  stepCurrent: text,
+  back: text,
+  nextTo: text,
+  lastStepNotice: text,
+  statementsLabel: text,
+  onePerLine: text,
+  assumptionsHint: text,
+  indicatorsHint: text,
+  indicatorLabel: text,
+  indicatorNumber: text,
+  addIndicator: text,
+  removeIndicator: text,
+  savedNotice: text,
+  saveFailed: text,
+  clearData: text,
+  clearConfirm: text,
+  clearConfirmYes: text,
+  cancel: text,
+  levelPrompts,
   guidanceHeading: text,
   definitionLabel: text,
   strongExampleLabel: text,

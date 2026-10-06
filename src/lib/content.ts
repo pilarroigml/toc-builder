@@ -8,6 +8,13 @@ import fieldsJson from '../../content/fields.en.json'
 
 export const ui = uiJson as unknown as Ui
 
+// Fill in {placeholders} in interface text, e.g. "Step {current} of {total}".
+export function fill(template: string, values: Record<string, string | number>): string {
+  return template.replace(/\{(\w+)\}/g, (match, key: string) =>
+    key in values ? String(values[key]) : match,
+  )
+}
+
 export const fields = (fieldsJson as unknown as { fields: FieldGuidance[] }).fields
 
 // Every file in content/examples is picked up automatically.
