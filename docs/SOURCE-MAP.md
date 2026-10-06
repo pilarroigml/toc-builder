@@ -33,7 +33,7 @@ Short names used below:
 | Part | Where it comes from |
 |---|---|
 | Definition | BE Logframe (activities as the main tasks needed to produce outputs). "Start with a verb, plan and budget" is own writing. |
-| Strong example | Fees for girls with a place who can't afford it, modelled on Ghana. Bicycles for girls living far away, modelled on Bihar. Caregiver meetings on household work are invented. The problem they address is evidenced (see Problem), but no source evaluates this activity itself. |
+| Strong example | Fees for girls with a place who can't afford it, modelled on Ghana. Bicycles for girls living far away, modelled on Bihar. Family groups with chiefs and religious leaders, modelled on Population Council (Burkina Faso and Tanzania, 2020) and World Bank Economic Review (Zimbabwe, 2024), both of which found higher school attendance or enrolment. The "sharing household work" topic is not directly evaluated. |
 | Weak example and fix | Own writing. |
 | Tip | Matching activities to causes is own writing, supported by Bihar. Main activities only, each leading to an output, is own writing. Same model working in Uganda but failing in Tanzania, from GIL lessons. |
 

@@ -59,7 +59,7 @@
     {
       "level": "activities",
       "definition": "The main things your team will do, using your staff, money and materials, to produce your outputs. Activities are actions, so they start with a verb such as pay, train, run or organise. Describe them specifically enough that someone could plan and budget them.",
-      "strongExample": "Each year, pay the full secondary school fees for 300 girls who have a place but can't afford to take it, selected with schools using a clear, published rule. Give a bicycle to every girl in the programme who lives more than 3 km from school. Meet caregivers each term to agree how household work can be shared during exam periods.",
+      "strongExample": "Each year, pay the full secondary school fees for 300 girls who have a place but can't afford to take it, selected with schools using a clear, published rule. Give a bicycle to every girl in the programme who lives more than 3 km from school. Run monthly family groups, led by trained facilitators from the community with village chiefs and religious leaders taking part, on why girls' schooling matters and how household work can be shared.",
       "weakExample": {
         "text": "Support girls' education in the district.",
         "whatIsWrong": "This names a cause you care about, not something your team does. It's too vague to plan, cost or check: nobody could tell what happens on a Monday morning.",
@@ -89,6 +89,18 @@
           "title": "Top policy lessons on empowering adolescent girls (November 2023)",
           "organisation": "World Bank, Africa Gender Innovation Lab",
           "url": "https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099851411152362994",
+          "accessed": "2026-10-06"
+        },
+        {
+          "title": "Designing and evaluating scalable child marriage prevention programs in Burkina Faso and Tanzania (Erulkar and others, Global Health: Science and Practice, 2020)",
+          "organisation": "Population Council",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7108941/",
+          "accessed": "2026-10-06"
+        },
+        {
+          "title": "Can discussions about girls' education improve academic outcomes? Evidence from a randomized development project (Cotton and others, 2024)",
+          "organisation": "World Bank Economic Review",
+          "url": "https://hdl.handle.net/10986/42817",
           "accessed": "2026-10-06"
         }
       ],

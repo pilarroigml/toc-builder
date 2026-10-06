@@ -27,7 +27,7 @@
       "items": [
         "Provide bursaries covering fees, uniforms and materials for the 300 girls most at risk of leaving, selected with schools and community leaders",
         "Organise supervised walking groups and a bicycle-loan scheme for girls who live more than 3 km from school",
-        "Run termly sessions with parents and caregivers on the value of finishing secondary school and on sharing household tasks",
+        "Run monthly family groups, led by trained community facilitators with village chiefs and religious leaders taking part, on the value of finishing secondary school and on sharing household tasks",
         "Train 40 teachers in gender-responsive teaching and in spotting early signs that a pupil may drop out"
       ],
       "assumptions": [
@@ -47,7 +47,7 @@
       "items": [
         "300 girls a year receive full bursaries before term starts",
         "Safe-travel schemes run on 6 routes, used by up to 150 girls",
-        "12 caregiver sessions held each year, reaching 400 caregivers",
+        "Monthly family groups running in 10 villages, reaching 400 parents and caregivers",
         "40 teachers trained and using an early-warning attendance checklist"
       ],
       "assumptions": [
@@ -177,6 +177,18 @@
       "title": "Water hauling and girls' school attendance: some new evidence from Ghana (Nauges and Strand, Policy Research Working Paper 6443, 2013)",
       "organisation": "World Bank",
       "url": "https://hdl.handle.net/10986/15585",
+      "accessed": "2026-10-06"
+    },
+    {
+      "title": "Designing and evaluating scalable child marriage prevention programs in Burkina Faso and Tanzania (Erulkar and others, Global Health: Science and Practice, 2020)",
+      "organisation": "Population Council",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7108941/",
+      "accessed": "2026-10-06"
+    },
+    {
+      "title": "Can discussions about girls' education improve academic outcomes? Evidence from a randomized development project (Cotton and others, 2024)",
+      "organisation": "World Bank Economic Review",
+      "url": "https://hdl.handle.net/10986/42817",
       "accessed": "2026-10-06"
     },
     {
