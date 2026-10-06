@@ -72,7 +72,7 @@
   "indicatorsLabel": "Indicators",
   "baselineLabel": "Baseline",
   "targetLabel": "Target",
-  "meansOfVerificationLabel": "How we'll know",
+  "meansOfVerificationLabel": "Source of evidence (means of verification)",
   "draftPairsLabel": "From first draft to stronger version",
   "weakDraftLabel": "First draft",
   "improvedDraftLabel": "Improved",
