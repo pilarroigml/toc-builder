@@ -19,3 +19,5 @@ The full project brief is in `docs/BRIEF.md`. Read it before starting any step. 
 - Every guidance item and example has `sources` and a `status` (`draft`, `needs-review`, `reviewed-by-practitioner`). Never invent sources. Check URLs load. Paraphrase, don't copy.
 - After each step, update `PROJECT_LOG.md` with what exists, how to run it, how to know it broke, and how to fix or change it.
 - The Vite `base` path in `vite.config.ts` must match the GitHub repository name.
+- Examples and guidance speak of "the project" or "the project team", never "an NGO" or "a charity", so the tool suits any organisation.
+- Examples are invented but modelled on evaluated programmes, cited in the example and in `content/sources.md`. Prefer recent sources and flag older ones.
