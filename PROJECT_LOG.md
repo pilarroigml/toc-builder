@@ -1,6 +1,6 @@
 # Project log
 
-## Step 5 — Quality checklist (done locally, 6 October 2026, waiting for Pilar's test)
+## Step 5 — Quality checklist (done, 6 October 2026)
 
 ### 1. What now exists and where
 - `content/checklist.en.json` holds the eight rules: wording, words to look for, thresholds, sources and status. This is the official version for checkers to review.
