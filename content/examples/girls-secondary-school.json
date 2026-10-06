@@ -1,5 +1,6 @@
 {
   "id": "girls-secondary-school",
+  "order": 1,
   "title": "Keeping girls in secondary school",
   "illustrative": true,
   "sectors": ["development", "education", "gender"],

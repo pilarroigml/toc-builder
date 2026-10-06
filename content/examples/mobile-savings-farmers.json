@@ -1,5 +1,6 @@
 {
   "id": "mobile-savings-farmers",
+  "order": 2,
   "title": "Mobile savings groups for smallholder farmers",
   "illustrative": true,
   "sectors": ["development", "financial-inclusion"],

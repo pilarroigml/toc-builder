@@ -41,9 +41,9 @@ export default function ProgressSteps({ current, hasContent, onSelect }: Props) 
                 <span
                   className={`flex h-7 w-7 items-center justify-center rounded-full text-sm group-hover:ring-2 group-hover:ring-accent/40 ${
                     state === 'done'
-                      ? 'bg-accent text-white'
+                      ? 'bg-accent text-on-accent'
                       : state === 'current'
-                        ? 'border-2 border-accent bg-white font-semibold text-accent'
+                        ? 'border-2 border-accent bg-surface font-semibold text-accent'
                         : 'bg-line-soft text-muted'
                   }`}
                 >

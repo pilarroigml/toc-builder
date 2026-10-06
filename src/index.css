@@ -2,20 +2,51 @@
 @import "tailwindcss";
 
 /* ===== EDITABLE SETTINGS =====
-   All colours for the site. Change them here and they update everywhere.
-   Design decisions are explained in docs/DESIGN.md.
-   Keep text colours dark enough to pass accessibility contrast (WCAG AA). */
+   All colours for the site, in a light and a dark version.
+   Change them here and they update everywhere. Design decisions are in docs/DESIGN.md.
+   Every text colour passes accessibility contrast (WCAG AA, 4.5:1) against its background,
+   and text box borders pass 3:1. Re-check if you change a colour. */
+
+/* Light theme: the default, and always used when printing */
 @theme {
   --color-accent: #1f6f5c;       /* the one accent colour: buttons, headings, links */
-  --color-accent-tint: #e6f0ec;  /* pale accent, behind strong examples */
+  --color-on-accent: #ffffff;    /* text on accent-coloured buttons and banners */
+  --color-accent-tint: #e6f0ec;  /* pale accent, behind strong examples and tags */
   --color-paper: #faf7f2;        /* page background */
+  --color-surface: #ffffff;      /* cards, text boxes, guidance panel */
   --color-ink: #24231f;          /* main text */
   --color-muted: #5b5a55;        /* secondary text */
-  --color-line: #cfc8ba;         /* borders of text boxes */
+  --color-field: #8c8577;        /* borders of text boxes and dropdowns */
+  --color-line: #cfc8ba;         /* other borders */
   --color-line-soft: #e4dfd5;    /* borders of cards, upcoming steps */
-  --color-weak-tint: #f7ece4;    /* warm tint, behind weak examples */
-  --color-danger: #9b2c1f;       /* "clear my data" confirmation */
+  --color-weak-tint: #f7ece4;    /* warm tint, behind weak examples and the problem */
+  --color-problem: #8a3b12;      /* "Problem" heading in the diagram */
+  --color-danger: #9b2c1f;       /* "clear my data" and "replace my work" */
+  --color-on-danger: #ffffff;    /* text on danger-coloured buttons */
   --color-warn: #b7791f;         /* left edge of "Things to check" suggestions */
+}
+
+/* Dark theme: on screen only, when the page is marked dark
+   (by the visitor's choice, or by "Auto" following their device; see src/lib/theme.ts) */
+@media screen {
+  :root[data-theme='dark'] {
+    --color-accent: #5cc4a6;
+    --color-on-accent: #0f1513;
+    --color-accent-tint: #173229;
+    --color-paper: #141a18;
+    --color-surface: #1c2421;
+    --color-ink: #e6ebe8;
+    --color-muted: #a7b2ad;
+    --color-field: #6f7f79;
+    --color-line: #3a4743;
+    --color-line-soft: #2e3a36;
+    --color-weak-tint: #2b231c;
+    --color-problem: #f0b48a;
+    --color-danger: #f2897b;
+    --color-on-danger: #141a18;
+    --color-warn: #e0a64a;
+    color-scheme: dark; /* dark scrollbars and form controls too */
+  }
 }
 /* ============================= */
 

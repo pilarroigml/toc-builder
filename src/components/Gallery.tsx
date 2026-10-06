@@ -40,7 +40,7 @@ export default function Gallery({ examples, hasWork, onLoad }: Props) {
     onLoad(example)
   }
 
-  const selectClass = 'mt-1 block min-h-11 w-full rounded-md border border-line bg-white px-3 text-base'
+  const selectClass = 'mt-1 block min-h-11 w-full rounded-md border border-field bg-surface px-3 text-base'
 
   return (
     <section aria-labelledby="gallery-title">
@@ -77,7 +77,7 @@ export default function Gallery({ examples, hasWork, onLoad }: Props) {
       ) : (
         <ul className="mt-6 grid gap-5 lg:grid-cols-2">
           {shown.map((ex) => (
-            <li key={ex.id} className="flex flex-col rounded-xl border border-line-soft bg-white p-5">
+            <li key={ex.id} className="flex flex-col rounded-xl border border-line-soft bg-surface p-5">
               <h3 className="text-lg font-semibold">{ex.title}</h3>
               <p className="mt-1 flex flex-wrap gap-1.5 text-xs">
                 {[...ex.sectors.map((s) => ui.sectorNames[s]), ...ex.userTypes.map((u) => ui.userTypeNames[u])].map(
@@ -121,8 +121,8 @@ export default function Gallery({ examples, hasWork, onLoad }: Props) {
                   <button
                     type="button"
                     onClick={() => load(ex)}
-                    className={`min-h-11 rounded-md px-4 font-medium text-white ${
-                      confirming === ex.id ? 'bg-danger' : 'bg-accent hover:bg-accent/90'
+                    className={`min-h-11 rounded-md px-4 font-medium ${
+                      confirming === ex.id ? 'bg-danger text-on-danger' : 'bg-accent text-on-accent hover:bg-accent/90'
                     }`}
                   >
                     {confirming === ex.id ? ui.loadConfirmYes : ui.loadIntoCanvas}
@@ -131,7 +131,7 @@ export default function Gallery({ examples, hasWork, onLoad }: Props) {
                     <button
                       type="button"
                       onClick={() => setConfirming(null)}
-                      className="min-h-11 rounded-md border border-line px-4"
+                      className="min-h-11 rounded-md border border-field px-4"
                     >
                       {ui.cancel}
                     </button>

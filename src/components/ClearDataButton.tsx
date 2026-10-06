@@ -20,7 +20,7 @@ export default function ClearDataButton({ onClear }: { onClear: () => void }) {
   }
 
   return (
-    <div role="alert" className="rounded-lg border border-danger bg-white p-3 text-sm">
+    <div role="alert" className="rounded-lg border border-danger bg-surface p-3 text-sm">
       <p>{ui.clearConfirm}</p>
       <div className="mt-2 flex flex-wrap gap-2">
         <button
@@ -29,14 +29,14 @@ export default function ClearDataButton({ onClear }: { onClear: () => void }) {
             onClear()
             setConfirming(false)
           }}
-          className="min-h-11 rounded-md bg-danger px-4 text-white"
+          className="min-h-11 rounded-md bg-danger px-4 text-on-danger"
         >
           {ui.clearConfirmYes}
         </button>
         <button
           type="button"
           onClick={() => setConfirming(false)}
-          className="min-h-11 rounded-md border border-line px-4"
+          className="min-h-11 rounded-md border border-field px-4"
         >
           {ui.cancel}
         </button>

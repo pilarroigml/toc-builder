@@ -11,7 +11,7 @@ export default function GuidancePanel({ level }: { level: LevelId }) {
   return (
     <aside
       aria-label={`${ui.guidanceHeading}, ${ui.levelNames[level]}`}
-      className="rounded-xl border border-line-soft bg-white p-5 text-[0.95rem] leading-relaxed"
+      className="rounded-xl border border-line-soft bg-surface p-5 text-[0.95rem] leading-relaxed"
     >
       <h3 className="font-semibold text-accent">{ui.guidanceHeading}</h3>
 

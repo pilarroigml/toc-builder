@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react'
 import { examples, ui } from './lib/content'
 import { clearDraft, draftIsEmpty, emptyDraft, exampleToDraft, loadDraft, saveDraft } from './lib/draft'
 import ClearDataButton from './components/ClearDataButton'
+import ThemeSwitch from './components/ThemeSwitch'
 import ViewTabs, { type View } from './components/ViewTabs'
 import BuildView from './components/BuildView'
 import DiagramView from './components/DiagramView'
@@ -64,7 +65,10 @@ export default function App() {
           <h1 className="text-2xl font-semibold">{ui.appTitle}</h1>
           <p className="mt-1 text-muted">{ui.intro}</p>
         </div>
-        <ClearDataButton onClear={clearAll} />
+        <div className="flex flex-wrap items-center gap-2">
+          <ThemeSwitch />
+          <ClearDataButton onClear={clearAll} />
+        </div>
       </header>
 
       <div className="mt-6">
@@ -89,7 +93,7 @@ export default function App() {
         <div className="mt-6">
           {draftIsEmpty(draft) ? (
             // Nothing written yet: explain, and offer the worked example.
-            <div className="rounded-xl border border-line-soft bg-white p-6 text-center">
+            <div className="rounded-xl border border-line-soft bg-surface p-6 text-center">
               <p className="text-muted">{ui.diagramEmpty}</p>
               {starterExample && (
                 <button

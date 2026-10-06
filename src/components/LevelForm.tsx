@@ -19,7 +19,7 @@ type Props = {
 
 // Shared look for text boxes.
 const boxClass =
-  'mt-1 block w-full rounded-md border border-line bg-white px-3 py-2 text-base text-ink placeholder:text-muted'
+  'mt-1 block w-full rounded-md border border-field bg-surface px-3 py-2 text-base text-ink placeholder:text-muted'
 
 export default function LevelForm({ level, value, onChange, guidanceOnSmallScreens }: Props) {
   const id = useId()
@@ -101,7 +101,7 @@ export default function LevelForm({ level, value, onChange, guidanceOnSmallScree
             { key: 'meansOfVerification', label: ui.meansOfVerificationLabel },
           ]
           return (
-            <div key={index} className="mt-3 rounded-lg border border-line-soft bg-white p-4">
+            <div key={index} className="mt-3 rounded-lg border border-line-soft bg-surface p-4">
               <div className="flex items-center justify-between">
                 <p className="text-sm font-medium text-muted">{fill(ui.indicatorNumber, { number })}</p>
                 <button

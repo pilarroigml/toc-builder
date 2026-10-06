@@ -19,3 +19,9 @@ Chosen 6 October 2026, a mix of direction A (calm green) and direction B (warm p
 - System fonts, one typeface. WCAG AA contrast. Visible focus outlines. One main action per screen.
 
 All colours are set once at the top of `src/index.css`.
+
+## Dark mode (added 6 October 2026)
+- A switch in the header offers Auto, Light and Dark. Auto, the default, follows the device's setting. The choice is remembered on the device (`src/lib/theme.ts`).
+- Dark colours use a deep charcoal-green background (`#141a18`) rather than pure black, and a brighter green accent (`#5cc4a6`), because the light theme's green is too dim on dark backgrounds.
+- Printing (and the PDF export) always uses the light colours.
+- Every text colour in both themes passes WCAG AA contrast (4.5:1). Text box borders pass 3:1. The check also found that the original light text box border (`#cfc8ba`, 1.66:1) was too faint. It is now `#8c8577` (3.66:1), set as `--color-field`.

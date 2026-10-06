@@ -23,4 +23,5 @@ const exampleFiles = import.meta.glob('../../content/examples/*.json', {
   eager: true,
   import: 'default',
 })
-export const examples = Object.values(exampleFiles) as Example[]
+// Shown in the order set by each file's "order" number.
+export const examples = (Object.values(exampleFiles) as Example[]).sort((a, b) => a.order - b.order)

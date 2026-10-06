@@ -1,5 +1,6 @@
 {
   "id": "food-waste-enterprise",
+  "order": 3,
   "title": "Cutting food waste in restaurants and shops",
   "illustrative": true,
   "sectors": ["sustainability"],

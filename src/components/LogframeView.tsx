@@ -28,7 +28,7 @@ export default function LogframeView({ draft }: { draft: Draft }) {
   const cell = 'border border-line-soft px-3 py-2 align-top'
 
   return (
-    <section aria-labelledby="logframe-title" className="rounded-xl border border-line-soft bg-white p-4 sm:p-6">
+    <section aria-labelledby="logframe-title" className="rounded-xl border border-line-soft bg-surface p-4 sm:p-6">
       <h2 id="logframe-title" className="text-lg font-semibold">
         {ui.logframeTitle}
       </h2>

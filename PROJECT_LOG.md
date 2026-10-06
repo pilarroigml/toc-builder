@@ -1,5 +1,24 @@
 # Project log
 
+## Extra — Dark mode (6 October 2026, waiting for Pilar's check)
+
+### 1. What now exists and where
+- Auto, Light and Dark switch in the header (`src/components/ThemeSwitch.tsx`, logic in `src/lib/theme.ts`). Auto follows the device. The choice is remembered on the device.
+- Colours for both themes at the top of `src/index.css`. A small script in `index.html` sets the theme before the page appears, so it never flashes the wrong colours. Printing is always light.
+- All components now use theme colours instead of fixed white.
+- Accessibility fix found on the way: text box borders were too faint and are now darker in both themes.
+- Gallery examples now have an `"order"` number, so they appear 1, 2, 3 rather than alphabetically by file name.
+
+### 2. How to run or open it
+- `npm run dev`, then use the Auto, Light and Dark buttons in the header.
+
+### 3. How I'd know it broke
+- Something stays white in dark mode. A colour was written directly into a component instead of using a theme colour.
+- The page flashes light before turning dark. Check the script in `index.html`.
+
+### 4. How to fix or change it
+- To change a colour, edit both the light value (in `@theme`) and the dark value (under `[data-theme='dark']`) at the top of `src/index.css`. Re-check contrast for text pairs (4.5:1) and borders (3:1).
+
 ## Step 6 — Examples gallery (part 1 of 2: the gallery, 6 October 2026)
 
 ### Example lineup (agreed with Pilar, 6 October 2026; replaces the brief's table)

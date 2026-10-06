@@ -47,10 +47,10 @@ export default function DiagramView({ draft, id = 'toc-diagram' }: Props) {
                 {isBanner ? (
                   <div
                     className={`rounded-lg p-3 text-sm leading-snug lg:text-xs ${
-                      isImpact ? 'bg-accent text-white' : 'bg-weak-tint text-ink'
+                      isImpact ? 'bg-accent text-on-accent' : 'bg-weak-tint text-ink'
                     }`}
                   >
-                    <h3 className={`mb-1 text-xs font-semibold ${isImpact ? 'text-accent-tint' : 'text-[#8a3b12]'}`}>
+                    <h3 className={`mb-1 text-xs font-semibold ${isImpact ? 'text-accent-tint' : 'text-problem'}`}>
                       {ui.levelNames[levelId]}
                     </h3>
                     {statements.length > 0 ? (
@@ -67,7 +67,7 @@ export default function DiagramView({ draft, id = 'toc-diagram' }: Props) {
                         {statements.map((line) => (
                           <li
                             key={line}
-                            className="rounded-md border border-line-soft bg-white px-2 py-1.5 text-sm leading-snug lg:text-xs"
+                            className="rounded-md border border-line-soft bg-surface px-2 py-1.5 text-sm leading-snug lg:text-xs"
                           >
                             {line}
                           </li>

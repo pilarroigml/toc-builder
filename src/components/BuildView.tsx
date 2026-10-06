@@ -89,7 +89,7 @@ export default function BuildView({ draft, onChange, saveWorks }: Props) {
               <button
                 type="button"
                 onClick={() => goTo(step + 1)}
-                className="min-h-11 rounded-md bg-accent px-5 font-medium text-white hover:bg-accent/90"
+                className="min-h-11 rounded-md bg-accent px-5 font-medium text-on-accent hover:bg-accent/90"
               >
                 {fill(ui.nextTo, { level: ui.levelNames[LEVEL_IDS[step + 1]] })}
               </button>

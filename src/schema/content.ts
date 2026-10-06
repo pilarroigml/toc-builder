@@ -42,6 +42,10 @@ const levelPrompts = z.strictObject(
 export const UiSchema = z.strictObject({
   appTitle: text,
   intro: text,
+  themeLabel: text,
+  themeAuto: text,
+  themeLight: text,
+  themeDark: text,
   viewsLabel: text,
   viewBuild: text,
   viewDiagram: text,
@@ -170,6 +174,8 @@ const LevelContentSchema = z.strictObject({
 
 export const ExampleSchema = z.strictObject({
   id: z.string().regex(/^[a-z0-9-]+$/, 'Use lowercase letters, numbers and hyphens only'),
+  // Position in the gallery: 1 comes first.
+  order: z.number().int().min(1),
   title: text,
   illustrative: z.literal(true, { message: 'Every example must be marked "illustrative": true' }),
   sectors: z.array(z.enum(SECTORS)).min(1),

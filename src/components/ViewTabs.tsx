@@ -18,7 +18,7 @@ export default function ViewTabs({ current, onChange }: Props) {
     { id: 'examples', label: ui.viewExamples },
   ]
   return (
-    <nav aria-label={ui.viewsLabel} className="flex gap-1 rounded-lg border border-line-soft bg-white p-1">
+    <nav aria-label={ui.viewsLabel} className="flex gap-1 rounded-lg border border-line-soft bg-surface p-1">
       {views.map((view) => (
         <button
           key={view.id}
@@ -26,7 +26,7 @@ export default function ViewTabs({ current, onChange }: Props) {
           onClick={() => onChange(view.id)}
           aria-current={current === view.id ? 'page' : undefined}
           className={`min-h-11 flex-1 rounded-md px-3 text-sm font-medium sm:flex-none sm:px-4 ${
-            current === view.id ? 'bg-accent text-white' : 'text-ink hover:bg-paper'
+            current === view.id ? 'bg-accent text-on-accent' : 'text-ink hover:bg-paper'
           }`}
         >
           {view.label}

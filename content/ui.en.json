@@ -2,6 +2,10 @@
   "appTitle": "Theory of Change Builder",
   "intro": "Build your theory of change one level at a time. Your work is saved on this device only.",
 
+  "themeLabel": "Colour theme",
+  "themeAuto": "Auto",
+  "themeLight": "Light",
+  "themeDark": "Dark",
   "viewsLabel": "Views",
   "viewBuild": "Build",
   "viewDiagram": "Diagram",
