@@ -1,0 +1,57 @@
+# Automatic deploy to GitHub Pages.
+# Every time new work is pushed to the "main" branch, GitHub builds the site
+# and publishes it at https://pilarroigml.github.io/toc-builder/
+# If a build fails, GitHub emails you and the live site keeps the previous version.
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: # lets you re-run the deploy by hand from the Actions tab
+
+# Permissions GitHub needs to publish the site. Nothing else.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# If two pushes happen close together, finish one deploy before starting the next.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v5
+
+      - name: Install Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install building blocks
+        run: npm ci
+
+      - name: Check and build the site
+        run: npm run build
+
+      - name: Package the built site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
