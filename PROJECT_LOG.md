@@ -15,7 +15,7 @@
 The brief's student food redistribution example was dropped because it overlaps with Example 3.
 
 ### 1. What now exists and where
-- A fourth tab, "Examples" (`src/components/Gallery.tsx`). It has filters for sector and "who it's for", showing only options that at least one example uses. Each card shows tags, the illustrative notice, a summary, an expandable "why this works" with draft pairs and sources, and "Load into my canvas".
+- A fourth tab, "Examples" (`src/components/Gallery.tsx`). It has filters for sector and "who it's for", showing only options that at least one example uses. Each card shows tags, the illustrative notice, a summary, an expandable "why this works" with draft pairs and sources, and "Open in the builder".
 - Loading replaces the user's work, so it asks first when there is any. After loading, the user lands on Build with the note "Example loaded. Everything here is now yours to edit."
 - Display names for sectors and user types are in `content/ui.en.json` (`sectorNames`, `userTypeNames`). "Energy" was added to `src/schema/lists.ts`.
 
@@ -24,7 +24,7 @@ The brief's student food redistribution example was dropped because it overlaps 
 
 ### 3. How I'd know it broke
 - An example file is missing from the gallery. Check that its file is in `content/examples/` and the build passes.
-- "Load into my canvas" replaces work without asking.
+- "Open in the builder" replaces work without asking.
 
 ### 4. How to fix or change it
 - To add an example, drop a new `.json` file in `content/examples/`, with `"id"` matching the file name. It appears in the gallery automatically.
