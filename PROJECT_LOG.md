@@ -8,6 +8,7 @@
 - `src/components/ChecklistBox.tsx` shows "Things to check" under the form for the current level. It only appears once something is written. Suggestions never block moving on.
 - The content checker now also validates `checklist.en.json`, so a typo in a rule stops the build.
 - Tested: Example 1 is clean on all six levels, and each of the eight rules triggers on a deliberate mistake.
+- A readable version for checkers is in Pilar's doc "Theory of Change Builder: quality checklist rules for review": https://claude.ai/code/artifact/7bbe5b72-f2b1-47e8-be96-d4f5b0a7f697. If rules change in `content/checklist.en.json`, update the doc too (or ask Claude to).
 
 ### 2. How to run or open it
 - `npm run dev`, open `http://localhost:5173/toc-builder/`, go to Outputs, and type "Improved attendance of girls".
