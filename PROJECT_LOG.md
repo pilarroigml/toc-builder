@@ -1,6 +1,6 @@
 # Project log
 
-## Extra — Dark mode (6 October 2026, waiting for Pilar's check)
+## Extra — Dark mode (done, 6 October 2026)
 
 ### 1. What now exists and where
 - Auto, Light and Dark switch in the header (`src/components/ThemeSwitch.tsx`, logic in `src/lib/theme.ts`). Auto follows the device. The choice is remembered on the device.

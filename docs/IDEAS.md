@@ -12,3 +12,7 @@ Alternatives are specialised ToC software (often paid, built for evaluators), ge
 2. **"What the evidence says" cards** (strong candidate, hardest to copy). Short cards at each level pointing to evaluated programmes (J-PAL, IPA, World Bank Africa Gender Innovation Lab, RAND) with what was found and links. Plays to content quality.
 3. **"Spot the mistake" practice.** A quick quiz using the weak and strong examples already written. Playful, good for students and newcomers, low cost.
 4. **Funder's eye view.** Show the ToC as a reviewer would, with the quality checklist as a score. Serves the "reviewer or funder" user from the brief.
+
+## Agreed, to build after Example 4 (6 October 2026)
+
+**"Who are you building this for?" mode.** A dropdown above the progress steps (NGO, social entrepreneur, researcher, community group, "Not sure"), remembered on the device. The guidance panel gains an "In a matching example" section showing how the matching worked example handled the current level, with a link to open it. Definitions, strong and weak examples and tips stay as the single running story. Optionally, the gallery's "Who it's for" filter starts pre-set. This is the brief's "mode selector", in a light version that reuses existing examples and adds no per-mode content.
