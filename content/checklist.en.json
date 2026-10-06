@@ -4,7 +4,17 @@
       "id": "output-uses-outcome-words",
       "check": "wordsInStatements",
       "levels": ["outputs"],
-      "words": ["improved", "improve", "improves", "increased", "increase", "increases", "strengthened", "strengthen", "enhanced", "enhance", "better", "reduced", "reduce", "decreased", "empowered"],
+      "words": [
+        "improved", "improve", "improves", "improving",
+        "increased", "increase", "increases", "increasing",
+        "strengthened", "strengthen", "strengthens", "strengthening",
+        "enhanced", "enhance", "enhances",
+        "reduced", "reduce", "reduces", "reducing",
+        "decreased", "decrease", "decreases",
+        "empowered", "empower", "empowers",
+        "better",
+        "raised", "boosted", "transformed", "changed", "adopted", "uptake"
+      ],
       "title": "This output may describe an outcome",
       "explanation": "Words like 'improved' or 'increased' usually describe a change in people's lives, which is an outcome. Outputs are what your project delivers and can count directly.",
       "fix": "Say what you will deliver, for example '300 girls receive bursaries', and move the change to your outcomes.",
