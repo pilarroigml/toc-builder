@@ -25,6 +25,58 @@
         }
       ],
       "status": "draft"
+    },
+    {
+      "level": "activities",
+      "definition": "The main things your team will do, using your staff, money and materials, to produce your outputs. Activities are actions, so they start with a verb such as train, run, distribute or organise. Describe them specifically enough that someone could plan and budget them.",
+      "strongExample": "At the start of each term, assess the reading level of every pupil in Years 3 to 5 in 20 schools. Group pupils by reading level rather than by year for one hour a day, using simple materials matched to each level. Give each teacher a mentor who visits monthly to observe and support.",
+      "weakExample": {
+        "text": "Improve children's reading through innovative education approaches.",
+        "whatIsWrong": "This is a result you hope for, not something your team does. It's also too vague to plan, cost or check: nobody could tell what happens on a Monday morning.",
+        "improved": "Train 40 teachers to assess pupils' reading levels and to run a daily one-hour session with pupils grouped by level."
+      },
+      "tip": "Keep to the main activities. The detailed tasks belong in your workplan. Check that every activity leads to at least one output. If one doesn't, ask whether you need it, or whether an output is missing.",
+      "sources": [
+        {
+          "title": "Logframe",
+          "organisation": "BetterEvaluation",
+          "url": "https://www.betterevaluation.org/methods-approaches/methods/logframe",
+          "accessed": "2026-10-06"
+        },
+        {
+          "title": "Teaching at the Right Level to improve learning",
+          "organisation": "J-PAL (Abdul Latif Jameel Poverty Action Lab)",
+          "url": "https://www.povertyactionlab.org/case-study/teaching-right-level-improve-learning",
+          "accessed": "2026-10-06"
+        }
+      ],
+      "status": "draft"
+    },
+    {
+      "level": "outputs",
+      "definition": "The direct, tangible results of your activities: the products, services or training your project delivers. You can count them, and they are largely within your control. Outputs are what you deliver. Outcomes are the changes that follow in people's lives.",
+      "strongExample": "60 girls' clubs meeting five afternoons a week, each led by a trained young woman from the community. 1,500 girls aged 14 to 20 complete a life skills course and a vocational course of their choice.",
+      "weakExample": {
+        "text": "Girls are more confident and earn their own income.",
+        "whatIsWrong": "These are changes in girls' lives, so they are outcomes. Your project can't deliver them directly, because they depend on the girls themselves and on things around them, such as local jobs and family support.",
+        "improved": "1,500 girls complete a life skills course and a vocational course, such as tailoring or hairdressing."
+      },
+      "tip": "Ask of each output: can we deliver and count this ourselves? If the answer depends on other people changing what they do, it's probably an outcome. Words like 'improved', 'increased' or 'strengthened' usually signal an outcome. Funders' templates vary, so check how yours defines outputs.",
+      "sources": [
+        {
+          "title": "Logframe",
+          "organisation": "BetterEvaluation",
+          "url": "https://www.betterevaluation.org/methods-approaches/methods/logframe",
+          "accessed": "2026-10-06"
+        },
+        {
+          "title": "Safe spaces with vocational and life skills training for young women's economic and social empowerment in Uganda",
+          "organisation": "J-PAL (Abdul Latif Jameel Poverty Action Lab)",
+          "url": "https://www.povertyactionlab.org/evaluation/safe-spaces-vocational-and-life-skills-training-young-womens-economic-and-social",
+          "accessed": "2026-10-06"
+        }
+      ],
+      "status": "draft"
     }
   ]
 }
