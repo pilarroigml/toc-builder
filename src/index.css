@@ -1,0 +1,9 @@
+/* Global styles. Tailwind provides ready-made style classes used in the components. */
+@import "tailwindcss";
+
+/* ===== EDITABLE SETTINGS =====
+   The one accent colour for the whole site. Change it here and it updates everywhere. */
+@theme {
+  --color-accent: #1f6f5c;
+}
+/* ============================= */

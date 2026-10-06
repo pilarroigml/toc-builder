@@ -1,0 +1,16 @@
+# Files Git should never save or upload.
+
+# Downloaded building blocks (npm re-creates these from package.json)
+node_modules/
+
+# The built site (GitHub builds its own copy)
+dist/
+
+# Logs and system clutter
+*.log
+.DS_Store
+Thumbs.db
+
+# Local secrets, if ever created. Never commit these.
+.env
+.env.*
