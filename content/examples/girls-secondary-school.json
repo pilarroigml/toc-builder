@@ -9,10 +9,10 @@
   "levels": {
     "problem": {
       "items": [
-        "In a rural district, 38% of girls who enrol in secondary school leave before finishing lower secondary, compared with 21% of boys. Families cite the cost of fees, uniforms and transport. Girls describe the walk to school as unsafe, and household work increases as they get older."
+        "In a rural district, 38% of girls leave before finishing lower secondary, compared with 21% of boys. Main reasons: cost, unsafe journeys and household work."
       ],
       "assumptions": [
-        "School enrolment and attendance records are complete enough to show the gap between girls and boys."
+        "School records show the gap between girls and boys reliably"
       ],
       "indicators": [
         {
@@ -25,14 +25,14 @@
     },
     "activities": {
       "items": [
-        "Provide bursaries covering fees, uniforms and materials for the 300 girls most at risk of leaving, selected with schools and community leaders",
-        "Organise supervised walking groups and a bicycle-loan scheme for girls who live more than 3 km from school",
-        "Run monthly family groups, led by trained community facilitators with village chiefs and religious leaders taking part, on the value of finishing secondary school and on sharing household tasks",
-        "Train 40 teachers in gender-responsive teaching and in spotting early signs that a pupil may drop out"
+        "Bursaries for fees, uniforms and materials for 300 at-risk girls",
+        "Walking groups and bicycle loans for girls living 3 km+ away",
+        "Monthly family groups with chiefs and religious leaders",
+        "Train 40 teachers to spot early signs of drop-out"
       ],
       "assumptions": [
-        "Schools agree to share attendance data every month.",
-        "Funding arrives in time to pay bursaries before each term starts."
+        "Schools share attendance data monthly",
+        "Bursary funding arrives before each term"
       ],
       "indicators": [
         {
@@ -45,14 +45,14 @@
     },
     "outputs": {
       "items": [
-        "300 girls a year receive full bursaries before term starts",
-        "Safe-travel schemes run on 6 routes, used by up to 150 girls",
-        "Monthly family groups running in 10 villages, reaching 400 parents and caregivers",
-        "40 teachers trained and using an early-warning attendance checklist"
+        "300 girls a year get full bursaries before term",
+        "Safe-travel schemes on 6 routes, for up to 150 girls",
+        "Family groups in 10 villages, reaching 400 parents",
+        "40 teachers trained and using an early-warning checklist"
       ],
       "assumptions": [
-        "Girls and caregivers take up the offer, and bursaries carry no stigma.",
-        "Trained teachers stay in their posts."
+        "Families take up bursaries without stigma",
+        "Trained teachers stay in post"
       ],
       "indicators": [
         {
@@ -65,12 +65,12 @@
     },
     "outcomesShort": {
       "items": [
-        "Cost is no longer the main reason families give for keeping girls at home",
+        "Cost no longer the main reason girls stay home",
         "Girls attend school more regularly",
-        "Teachers act early when a girl's attendance drops"
+        "Teachers act early when attendance drops"
       ],
       "assumptions": [
-        "No sharp rise in other household costs, such as food prices, pushes girls into paid work."
+        "No sharp rise in other household costs, such as food"
       ],
       "indicators": [
         {
@@ -83,12 +83,12 @@
     },
     "outcomesMedium": {
       "items": [
-        "More girls move from Year 7 to Year 9 without leaving school",
-        "Caregivers expect and plan for their daughters to finish lower secondary"
+        "More girls move from Year 7 to Year 9",
+        "Families plan for daughters to finish lower secondary"
       ],
       "assumptions": [
-        "Schools have enough places and teachers for larger Year 8 and Year 9 classes.",
-        "Pressure for early marriage does not increase in the district."
+        "Enough school places and teachers for larger classes",
+        "Pressure for early marriage doesn't increase"
       ],
       "indicators": [
         {
@@ -101,10 +101,10 @@
     },
     "impact": {
       "items": [
-        "Girls in the district finish lower secondary school at the same rate as boys"
+        "Girls finish lower secondary at the same rate as boys"
       ],
       "assumptions": [
-        "The government keeps funding secondary schools in the district."
+        "Government keeps funding secondary schools"
       ],
       "indicators": [
         {
@@ -120,13 +120,13 @@
     {
       "level": "outputs",
       "weak": "Improved attendance of girls thanks to bursaries",
-      "improved": "300 girls a year receive full bursaries before term starts",
+      "improved": "300 girls a year get full bursaries before term",
       "why": "Better attendance is a change in behaviour, so it belongs under outcomes. An output is something the project delivers and can count directly."
     },
     {
       "level": "impact",
       "weak": "Empower girls and transform communities",
-      "improved": "Girls in the district finish lower secondary school at the same rate as boys",
+      "improved": "Girls finish lower secondary at the same rate as boys",
       "why": "The first version is too broad to measure or to link back to the activities. The improved version names one specific change that can be observed."
     }
   ],

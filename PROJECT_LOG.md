@@ -1,5 +1,27 @@
 # Project log
 
+## Step 4 — Diagram and logframe views (part 1 of 2: the diagram, 6 October 2026)
+
+### 1. What now exists and where
+- Chosen layout: a mix of option A and option B. Item cards in columns, problem and impact as coloured banners at each end, and each level's assumptions in a dashed box under it. Left to right on desktop, top to bottom on phones.
+- `src/components/DiagramView.tsx` draws the diagram from whatever the user has typed. Each line becomes one card.
+- `src/components/ViewTabs.tsx` switches between "Build" and "Diagram".
+- `src/components/BuildView.tsx` holds the form, moved out of `App.tsx` to keep it readable.
+- When nothing has been written, the diagram offers "See it with the worked example", which loads Example 1 into the user's own work. It only appears when the work is empty, so it never overwrites anything.
+- Example 1's statements are now medium length (about 6 to 12 words) so they read well as cards. The form hint now says "One short line per statement, about 6 to 12 words. Put detail in the indicators."
+- Not yet done: the logframe table (part 2).
+
+### 2. How to run or open it
+- `npm run dev`, open `http://localhost:5173/toc-builder/`, click "Diagram".
+
+### 3. How I'd know it broke
+- The Diagram tab is blank or shows an error. Press F12 and check the Console.
+- On a phone, the page scrolls sideways.
+
+### 4. How to fix or change it
+- Colours come from the top of `src/index.css`. Wording ("Your theory of change", "Assumes", "Nothing yet") is in `content/ui.en.json`.
+- To change which example is offered when the diagram is empty, edit `STARTER_EXAMPLE_ID` at the top of `src/App.tsx`.
+
 ## Step 3 — Guidance panel (done, 6 October 2026)
 
 ### Part 2: guidance content

@@ -5,7 +5,7 @@
 // on this device. Nothing is sent anywhere. Clearing it deletes the user's work.
 
 import { LEVEL_IDS } from '../schema/lists'
-import type { LevelId } from '../schema/content'
+import type { Example, LevelId } from '../schema/content'
 
 // ===== EDITABLE SETTINGS =====
 // The name under which work is saved in the browser. Change the version number
@@ -52,6 +52,35 @@ export const levelHasContent = (level: LevelDraft): boolean =>
   level.statements.trim() !== '' ||
   level.assumptions.trim() !== '' ||
   level.indicators.some((ind) => Object.values(ind).some((v) => v.trim() !== ''))
+
+// Whether the user has written anything in any level.
+export const draftIsEmpty = (draft: Draft): boolean =>
+  LEVEL_IDS.every((id) => !levelHasContent(draft.levels[id]))
+
+// Turn text typed "one per line" into a clean list, skipping blank lines.
+export const toLines = (text: string): string[] =>
+  text
+    .split('\n')
+    .map((line) => line.trim())
+    .filter((line) => line !== '')
+
+// Copy a worked example into the user's own work, so they can see it and edit it.
+export const exampleToDraft = (example: Example): Draft => ({
+  currentStep: 0,
+  levels: Object.fromEntries(
+    LEVEL_IDS.map((id) => {
+      const level = example.levels[id]
+      return [
+        id,
+        {
+          statements: level.items.join('\n'),
+          assumptions: level.assumptions.join('\n'),
+          indicators: level.indicators.map((ind) => ({ ...ind })),
+        },
+      ]
+    }),
+  ) as Record<LevelId, LevelDraft>,
+})
 
 // Read saved work. If there is none, or it can't be read, start fresh.
 // Missing levels are filled in, so older saves keep working if a level is added.

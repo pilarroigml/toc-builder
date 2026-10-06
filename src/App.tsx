@@ -1,48 +1,41 @@
-// The main screen: the guided form, one level per screen.
+// The main screen. It holds the user's work and switches between views:
+// "Build" (the guided form) and "Diagram" (the one-page picture).
 // Everything the user types is saved on this device as they type (see src/lib/draft.ts).
 // All words shown to users come from /content, never typed here.
 
-import { useEffect, useRef, useState } from 'react'
-import { LEVEL_IDS } from './schema/lists'
-import { fill, ui } from './lib/content'
-import { clearDraft, emptyDraft, levelHasContent, loadDraft, saveDraft, type LevelDraft } from './lib/draft'
-import ProgressSteps from './components/ProgressSteps'
-import LevelForm from './components/LevelForm'
+import { useEffect, useState } from 'react'
+import { examples, ui } from './lib/content'
+import { clearDraft, draftIsEmpty, emptyDraft, exampleToDraft, loadDraft, saveDraft } from './lib/draft'
 import ClearDataButton from './components/ClearDataButton'
-import GuidancePanel from './components/GuidancePanel'
+import ViewTabs, { type View } from './components/ViewTabs'
+import BuildView from './components/BuildView'
+import DiagramView from './components/DiagramView'
+
+// ===== EDITABLE SETTINGS =====
+// The worked example offered when the diagram is still empty.
+const STARTER_EXAMPLE_ID = 'girls-secondary-school'
+// =============================
 
 export default function App() {
   // Start from whatever was saved last time on this device.
   const [draft, setDraft] = useState(loadDraft)
   const [saveWorks, setSaveWorks] = useState(true)
-  const headingRef = useRef<HTMLHeadingElement>(null)
-  const isFirstRender = useRef(true)
-
-  const step = draft.currentStep
-  const level = LEVEL_IDS[step]
-  const isLast = step === LEVEL_IDS.length - 1
+  const [view, setView] = useState<View>('build')
 
   // Autosave: every change is saved straight away.
   useEffect(() => {
     setSaveWorks(saveDraft(draft))
   }, [draft])
 
-  // When moving to another level, go back to the top and move keyboard focus to the new heading.
-  useEffect(() => {
-    if (isFirstRender.current) {
-      isFirstRender.current = false
-      return
-    }
-    window.scrollTo({ top: 0 })
-    headingRef.current?.focus()
-  }, [step])
-
-  const goTo = (target: number) => setDraft((d) => ({ ...d, currentStep: target }))
-  const updateLevel = (value: LevelDraft) =>
-    setDraft((d) => ({ ...d, levels: { ...d.levels, [level]: value } }))
   const clearAll = () => {
     clearDraft()
     setDraft(emptyDraft())
+  }
+
+  // Only offered while nothing has been written, so it never overwrites the user's work.
+  const starterExample = examples.find((ex) => ex.id === STARTER_EXAMPLE_ID)
+  const loadStarterExample = () => {
+    if (starterExample && draftIsEmpty(draft)) setDraft(exampleToDraft(starterExample))
   }
 
   return (
@@ -55,69 +48,32 @@ export default function App() {
         <ClearDataButton onClear={clearAll} />
       </header>
 
-      <div className="mt-8">
-        <ProgressSteps current={step} hasContent={LEVEL_IDS.map((id) => levelHasContent(draft.levels[id]))} onSelect={goTo} />
+      <div className="mt-6">
+        <ViewTabs current={view} onChange={setView} />
       </div>
 
-      {/* Two columns on wide screens: the form on the left, guidance on the right.
-          On phones everything is one column and the guidance sits inside the form. */}
-      <div className="mt-6 lg:grid lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] lg:gap-10">
-      <main>
-        <h2 ref={headingRef} tabIndex={-1} className="text-2xl font-semibold text-accent">
-          {ui.levelNames[level]}
-        </h2>
-        <div className="mt-4">
-          {/* "key" makes the form start fresh for each level */}
-          <LevelForm
-            key={level}
-            level={level}
-            value={draft.levels[level]}
-            onChange={updateLevel}
-            guidanceOnSmallScreens={<GuidancePanel level={level} />}
-          />
-        </div>
+      {view === 'build' && <BuildView draft={draft} onChange={setDraft} saveWorks={saveWorks} />}
 
-        {saveWorks ? (
-          <p className="mt-6 text-sm text-muted">{ui.savedNotice}</p>
-        ) : (
-          <p role="alert" className="mt-6 text-sm text-danger">
-            {ui.saveFailed}
-          </p>
-        )}
-
-        <div className="mt-6 flex items-center justify-between gap-4">
-          {step > 0 ? (
-            <button
-              type="button"
-              onClick={() => goTo(step - 1)}
-              className="min-h-11 rounded-md px-3 text-accent hover:bg-accent-tint"
-            >
-              ← {ui.back}
-            </button>
+      {view === 'diagram' && (
+        <div className="mt-6">
+          {draftIsEmpty(draft) ? (
+            <div className="rounded-xl border border-line-soft bg-white p-6 text-center">
+              <p className="text-muted">{ui.diagramEmpty}</p>
+              {starterExample && (
+                <button
+                  type="button"
+                  onClick={loadStarterExample}
+                  className="mt-4 min-h-11 rounded-md border border-accent px-4 text-accent hover:bg-accent-tint"
+                >
+                  {ui.diagramLoadExample}
+                </button>
+              )}
+            </div>
           ) : (
-            <span />
-          )}
-          {isLast ? (
-            <p className="text-sm text-muted">{ui.lastStepNotice}</p>
-          ) : (
-            <button
-              type="button"
-              onClick={() => goTo(step + 1)}
-              className="min-h-11 rounded-md bg-accent px-5 font-medium text-white hover:bg-accent/90"
-            >
-              {fill(ui.nextTo, { level: ui.levelNames[LEVEL_IDS[step + 1]] })}
-            </button>
+            <DiagramView draft={draft} />
           )}
         </div>
-      </main>
-
-      {/* Guidance beside the form, wide screens only. It stays in view while scrolling. */}
-      <div className="hidden lg:block">
-        <div className="sticky top-6">
-          <GuidancePanel level={level} />
-        </div>
-      </div>
-      </div>
+      )}
     </div>
   )
 }

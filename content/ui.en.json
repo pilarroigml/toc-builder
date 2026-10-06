@@ -2,6 +2,15 @@
   "appTitle": "Theory of Change Builder",
   "intro": "Build your theory of change one level at a time. Your work is saved on this device only.",
 
+  "viewsLabel": "Views",
+  "viewBuild": "Build",
+  "viewDiagram": "Diagram",
+  "diagramTitle": "Your theory of change",
+  "diagramEmpty": "Your diagram appears here as you fill in the levels.",
+  "diagramLoadExample": "See it with the worked example",
+  "diagramNothingYet": "Nothing yet",
+  "assumesLabel": "Assumes",
+
   "progressLabel": "Progress",
   "stepOf": "Step {current} of {total} · {level}",
   "goToStep": "Go to step {number}, {level}",
@@ -12,7 +21,7 @@
   "lastStepNotice": "This is the last level. You can go back to any step to keep editing.",
 
   "statementsLabel": "Your answer",
-  "onePerLine": "One per line.",
+  "onePerLine": "One short line per statement, about 6 to 12 words. Put detail in the indicators.",
   "assumptionsHint": "What else must be true for this level to work? One per line.",
   "indicatorsHint": "How will you know this level has been achieved?",
   "indicatorLabel": "Indicator",
