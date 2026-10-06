@@ -156,11 +156,35 @@
       "accessed": "2026-10-06"
     },
     {
+      "title": "Gender norms and unpaid work (January 2023)",
+      "organisation": "UNICEF Data",
+      "url": "https://data.unicef.org/topic/gender/gender-norms-and-unpaid-work/",
+      "accessed": "2026-10-06"
+    },
+    {
+      "title": "Adolescent girls: unpaid domestic and care work in Latin America and the Caribbean (August 2025)",
+      "organisation": "UNICEF and UN Women",
+      "url": "https://www.unicef.org/lac/en/reports/adolescent-girls-unpaid-domestic-care-work-latin-america-caribbean",
+      "accessed": "2026-10-06"
+    },
+    {
+      "title": "Time spent on unpaid domestic and caregiving services by children in India (September 2024)",
+      "organisation": "UNICEF Innocenti",
+      "url": "https://www.unicef.org/innocenti/reports/time-spent-unpaid-domestic-and-caregiving-services-children-india",
+      "accessed": "2026-10-06"
+    },
+    {
+      "title": "Water hauling and girls' school attendance: some new evidence from Ghana (Nauges and Strand, Policy Research Working Paper 6443, 2013)",
+      "organisation": "World Bank",
+      "url": "https://hdl.handle.net/10986/15585",
+      "accessed": "2026-10-06"
+    },
+    {
       "title": "Develop theory of change / programme theory",
       "organisation": "BetterEvaluation",
       "url": "https://www.betterevaluation.org/frameworks-guides/rainbow-framework/define/develop-programme-theory-theory-change",
       "accessed": "2026-10-06"
     }
   ],
-  "status": "needs-review"
+  "status": "draft"
 }

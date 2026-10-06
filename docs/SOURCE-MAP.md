@@ -24,7 +24,7 @@ Short names used below:
 | Part | Where it comes from |
 |---|---|
 | Definition | NPC (who is affected, causes, don't start from your solution). "Where, how much" is own writing. |
-| Strong example | Invented. Cost as a reason, from Ghana (students with a place who couldn't afford it) and Zambia KGS (cost the leading reason for dropout). Distance and safety, from Bihar (gains were concentrated where schools were far). **Household work has no source** (open gap). |
+| Strong example | Invented. Cost as a reason, from Ghana (students with a place who couldn't afford it) and Zambia KGS (cost the leading reason for dropout). Distance and safety, from Bihar (gains were concentrated where schools were far). Household work, from UNICEF Data (global, 2023) and UNICEF and UN Women (Latin America and Caribbean, 2025). Example 1 also cites UNICEF Innocenti (India, 2024) and World Bank (Ghana water collection, 2013). Mostly associations, not proof of cause. |
 | Weak example and fix | Own writing, applying NPC's advice to set aside your solution. |
 | Tip | One or two sentences and narrowing down, from NPC. Asking "why" repeatedly, and its limits, from BE Five Whys. "Common explanations don't always hold" is own writing. |
 
@@ -33,7 +33,7 @@ Short names used below:
 | Part | Where it comes from |
 |---|---|
 | Definition | BE Logframe (activities as the main tasks needed to produce outputs). "Start with a verb, plan and budget" is own writing. |
-| Strong example | Fees for girls with a place who can't afford it, modelled on Ghana. Bicycles for girls living far away, modelled on Bihar. Caregiver meetings on household work are invented, with no source. |
+| Strong example | Fees for girls with a place who can't afford it, modelled on Ghana. Bicycles for girls living far away, modelled on Bihar. Caregiver meetings on household work are invented. The problem they address is evidenced (see Problem), but no source evaluates this activity itself. |
 | Weak example and fix | Own writing. |
 | Tip | Matching activities to causes is own writing, supported by Bihar. Main activities only, each leading to an output, is own writing. Same model working in Uganda but failing in Tanzania, from GIL lessons. |
 
