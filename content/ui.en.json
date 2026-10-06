@@ -36,7 +36,6 @@
 
   "checklistHeading": "Things to check",
   "checklistNone": "Nothing to flag at this level.",
-  "checklistCountIntro": "{count} suggestion(s). These are prompts to review, not errors, and you can move on at any time.",
   "checklistFound": "Found",
   "checklistIndicators": "Indicator number",
   "checklistCount": "Count",

@@ -5,7 +5,7 @@
 ### 1. What now exists and where
 - `content/checklist.en.json` holds the eight rules: wording, words to look for, thresholds, sources and status. This is the official version for checkers to review.
 - `src/lib/checklist.ts` runs the checks. It knows seven kinds of check (words in statements, no assumptions, no indicators, missing baseline or target, missing source of evidence, too many statements, long statement).
-- `src/components/ChecklistBox.tsx` shows "Things to check" under the form for the current level. It only appears once something is written. Suggestions never block moving on.
+- `src/components/ChecklistBox.tsx` shows each suggestion right under the box it is about: the answer, the assumptions or the indicators (Pilar's request). `fieldFor` in `src/lib/checklist.ts` decides which box. When something is written and nothing needs flagging, "✓ Nothing to flag at this level" shows under the answer. Suggestions never block moving on.
 - The content checker now also validates `checklist.en.json`, so a typo in a rule stops the build.
 - Tested: Example 1 is clean on all six levels, and each of the eight rules triggers on a deliberate mistake.
 - A readable version for checkers is in Pilar's doc "Theory of Change Builder: quality checklist rules for review": https://claude.ai/code/artifact/7bbe5b72-f2b1-47e8-be96-d4f5b0a7f697. If rules change in `content/checklist.en.json`, update the doc too (or ask Claude to).

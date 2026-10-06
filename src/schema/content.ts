@@ -73,7 +73,6 @@ export const UiSchema = z.strictObject({
   removeIndicator: text,
   checklistHeading: text,
   checklistNone: text,
-  checklistCountIntro: text,
   checklistFound: text,
   checklistIndicators: text,
   checklistCount: text,

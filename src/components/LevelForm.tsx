@@ -1,9 +1,12 @@
 // The form for one level: the main answer, its assumptions, and its indicators.
+// Quality checklist suggestions appear right under the box they are about.
 
 import { useId, type ReactNode } from 'react'
 import type { LevelId } from '../schema/content'
-import { emptyIndicator, type IndicatorDraft, type LevelDraft } from '../lib/draft'
+import { emptyIndicator, levelHasContent, type IndicatorDraft, type LevelDraft } from '../lib/draft'
 import { fill, ui } from '../lib/content'
+import { fieldFor, runChecks, type FormField } from '../lib/checklist'
+import ChecklistBox from './ChecklistBox'
 
 type Props = {
   level: LevelId
@@ -21,6 +24,16 @@ const boxClass =
 export default function LevelForm({ level, value, onChange, guidanceOnSmallScreens }: Props) {
   const id = useId()
   const prompt = ui.levelPrompts[level]
+
+  // Run the checklist and sort its suggestions by the box they belong under.
+  const findings = runChecks(level, value)
+  const findingsFor = (field: FormField) => findings.filter((f) => fieldFor(f.rule.check) === field)
+  const statementFindings = findingsFor('statements')
+  const assumptionFindings = findingsFor('assumptions')
+  const indicatorFindings = findingsFor('indicators')
+  // Screen readers read a box's hint, then any suggestions about it.
+  const describedBy = (field: FormField, hasFindings: boolean) =>
+    `${id}-${field}-hint${hasFindings ? ` ${id}-${field}-checks` : ''}`
 
   const updateIndicator = (index: number, changes: Partial<IndicatorDraft>) =>
     onChange({
@@ -40,12 +53,17 @@ export default function LevelForm({ level, value, onChange, guidanceOnSmallScree
         </p>
         <textarea
           id={`${id}-statements`}
-          aria-describedby={`${id}-statements-hint`}
+          aria-describedby={describedBy('statements', statementFindings.length > 0)}
           rows={5}
           value={value.statements}
           onChange={(e) => onChange({ ...value, statements: e.target.value })}
           className={boxClass}
         />
+        <ChecklistBox id={`${id}-statements-checks`} findings={statementFindings} />
+        {/* Something written and nothing to flag anywhere at this level: say so */}
+        {levelHasContent(value) && findings.length === 0 && (
+          <p className="mt-2 text-sm text-accent">✓ {ui.checklistNone}</p>
+        )}
       </div>
 
       {guidanceOnSmallScreens && <div className="lg:hidden">{guidanceOnSmallScreens}</div>}
@@ -60,18 +78,19 @@ export default function LevelForm({ level, value, onChange, guidanceOnSmallScree
         </p>
         <textarea
           id={`${id}-assumptions`}
-          aria-describedby={`${id}-assumptions-hint`}
+          aria-describedby={describedBy('assumptions', assumptionFindings.length > 0)}
           rows={3}
           value={value.assumptions}
           onChange={(e) => onChange({ ...value, assumptions: e.target.value })}
           className={boxClass}
         />
+        <ChecklistBox id={`${id}-assumptions-checks`} findings={assumptionFindings} />
       </div>
 
       {/* Indicators */}
       <fieldset>
         <legend className="font-medium">{ui.indicatorsLabel}</legend>
-        <p className="text-sm text-muted">{ui.indicatorsHint}</p>
+        <p id={`${id}-indicators-hint`} className="text-sm text-muted">{ui.indicatorsHint}</p>
 
         {value.indicators.map((indicator, index) => {
           const number = index + 1
@@ -123,6 +142,7 @@ export default function LevelForm({ level, value, onChange, guidanceOnSmallScree
         >
           + {ui.addIndicator}
         </button>
+        <ChecklistBox id={`${id}-indicators-checks`} findings={indicatorFindings} />
       </fieldset>
     </div>
   )

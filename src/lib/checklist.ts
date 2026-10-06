@@ -16,7 +16,17 @@ export type Finding = {
   detail?: string
 }
 
-const wordCount = (text: string) => text.split(/\s+/).filter(Boolean).length
+// Which box on the form each kind of check is about, so its suggestion appears right under that box.
+export type FormField = 'statements' | 'assumptions' | 'indicators'
+export function fieldFor(check: ChecklistRule['check']): FormField {
+  if (check === 'noAssumptions') return 'assumptions'
+  if (check === 'noIndicators' || check === 'indicatorMissingBaselineOrTarget' || check === 'indicatorMissingSource') {
+    return 'indicators'
+  }
+  return 'statements'
+}
+
+const wordCount =(text: string) => text.split(/\s+/).filter(Boolean).length
 
 // Find whole words or phrases, ignoring capital letters ("Improved" matches "improved").
 function findWords(text: string, words: string[]): string[] {
