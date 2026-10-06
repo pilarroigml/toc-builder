@@ -13,11 +13,16 @@ type Props = {
   // Whether the user has written anything, so loading would replace their work.
   hasWork: boolean
   onLoad: (example: Example) => void
+  // The user type chosen in "Who are you building this for?", used as the starting filter.
+  initialUserType?: string
 }
 
-export default function Gallery({ examples, hasWork, onLoad }: Props) {
+export default function Gallery({ examples, hasWork, onLoad, initialUserType = '' }: Props) {
   const [sector, setSector] = useState('')
-  const [userType, setUserType] = useState('')
+  // Start filtered to the user's type, but only if at least one example matches it.
+  const [userType, setUserType] = useState(() =>
+    examples.some((ex) => ex.userTypes.includes(initialUserType as Example['userTypes'][number])) ? initialUserType : '',
+  )
   // The example waiting for "Yes, replace my work", if any.
   const [confirming, setConfirming] = useState<string | null>(null)
 

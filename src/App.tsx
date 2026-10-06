@@ -15,11 +15,7 @@ import DiagramView from './components/DiagramView'
 import LogframeView from './components/LogframeView'
 import Gallery from './components/Gallery'
 import type { Example } from './schema/content'
-
-// ===== EDITABLE SETTINGS =====
-// The worked example offered when the diagram is still empty.
-const STARTER_EXAMPLE_ID = 'girls-secondary-school'
-// =============================
+import { loadMode, saveMode, RUNNING_STORY_EXAMPLE_ID, type Mode } from './lib/mode'
 
 export default function App() {
   // Start from whatever was saved last time on this device.
@@ -33,18 +29,27 @@ export default function App() {
     setView(next)
   }
 
+  // Who the user is building this for (remembered on this device).
+  const [mode, setMode] = useState<Mode>(loadMode)
+  useEffect(() => saveMode(mode), [mode])
+
   // Autosave: every change is saved straight away.
   useEffect(() => {
     setSaveWorks(saveDraft(draft))
   }, [draft])
+
+  const seeExamples = () => {
+    changeView('examples')
+    window.scrollTo({ top: 0 })
+  }
 
   const clearAll = () => {
     clearDraft()
     setDraft(emptyDraft())
   }
 
-  // Only offered while nothing has been written, so it never overwrites the user's work.
-  const starterExample = examples.find((ex) => ex.id === STARTER_EXAMPLE_ID)
+  // The running-story example (set in src/lib/mode.ts) is offered while nothing has been written, so it never overwrites the user's work.
+  const starterExample = examples.find((ex) => ex.id === RUNNING_STORY_EXAMPLE_ID)
   const loadStarterExample = () => {
     if (starterExample && draftIsEmpty(draft)) setDraft(exampleToDraft(starterExample))
   }
@@ -81,11 +86,20 @@ export default function App() {
         </p>
       )}
 
-      {view === 'build' && <BuildView draft={draft} onChange={setDraft} saveWorks={saveWorks} />}
+      {view === 'build' && (
+        <BuildView
+          draft={draft}
+          onChange={setDraft}
+          saveWorks={saveWorks}
+          mode={mode}
+          onModeChange={setMode}
+          onSeeExamples={seeExamples}
+        />
+      )}
 
       {view === 'examples' && (
         <div className="mt-6">
-          <Gallery examples={examples} hasWork={!draftIsEmpty(draft)} onLoad={loadExample} />
+          <Gallery examples={examples} hasWork={!draftIsEmpty(draft)} onLoad={loadExample} initialUserType={mode} />
         </div>
       )}
 

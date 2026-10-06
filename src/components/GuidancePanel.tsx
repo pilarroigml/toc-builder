@@ -1,11 +1,20 @@
 // The guidance card for one level: definition, strong example, weak example with a fix,
-// a tip, and sources. The text comes from content/fields.en.json.
+// a tip, a similar project matching the user's type, and sources.
+// The text comes from content/fields.en.json and content/examples.
 
 import type { LevelId } from '../schema/content'
 import { fields, ui } from '../lib/content'
+import type { Mode } from '../lib/mode'
 import SourceList from './SourceList'
+import SimilarProject from './SimilarProject'
 
-export default function GuidancePanel({ level }: { level: LevelId }) {
+type Props = {
+  level: LevelId
+  mode: Mode
+  onSeeExamples: () => void
+}
+
+export default function GuidancePanel({ level, mode, onSeeExamples }: Props) {
   const guidance = fields.find((field) => field.level === level)
 
   return (
@@ -40,6 +49,9 @@ export default function GuidancePanel({ level }: { level: LevelId }) {
 
           <h4 className="mt-4 text-sm font-semibold">{ui.tipLabel}</h4>
           <p>{guidance.tip}</p>
+
+          {/* "key" starts again at the best match whenever the user type changes */}
+          <SimilarProject key={mode} level={level} mode={mode} onSeeExamples={onSeeExamples} />
 
           <SourceList sources={guidance.sources} />
 

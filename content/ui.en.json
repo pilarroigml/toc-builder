@@ -51,6 +51,12 @@
   "diagramNothingYet": "Nothing yet",
   "assumesLabel": "Assumes",
 
+  "modeLabel": "Who are you building this for?",
+  "modeNotSure": "Not sure yet",
+  "similarHeading": "In a similar project",
+  "similarAnother": "Show another example",
+  "similarSeeAll": "See full examples",
+
   "progressLabel": "Progress",
   "stepOf": "Step {current} of {total} · {level}",
   "goToStep": "Go to step {number}, {level}",

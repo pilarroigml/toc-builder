@@ -7,13 +7,21 @@ import { levelHasContent, type Draft, type LevelDraft } from '../lib/draft'
 import ProgressSteps from './ProgressSteps'
 import LevelForm from './LevelForm'
 import GuidancePanel from './GuidancePanel'
+import ModeSelect from './ModeSelect'
+import type { Mode } from '../lib/mode'
+
 type Props = {
   draft: Draft
   onChange: (update: (draft: Draft) => Draft) => void
   saveWorks: boolean
+  // Who the user is building this for, and a way to change it
+  mode: Mode
+  onModeChange: (mode: Mode) => void
+  // Go to the examples gallery
+  onSeeExamples: () => void
 }
 
-export default function BuildView({ draft, onChange, saveWorks }: Props) {
+export default function BuildView({ draft, onChange, saveWorks, mode, onModeChange, onSeeExamples }: Props) {
   const headingRef = useRef<HTMLHeadingElement>(null)
   const isFirstRender = useRef(true)
 
@@ -38,6 +46,10 @@ export default function BuildView({ draft, onChange, saveWorks }: Props) {
   return (
     <>
       <div className="mt-6">
+        <ModeSelect mode={mode} onChange={onModeChange} />
+      </div>
+
+      <div className="mt-6">
         <ProgressSteps
           current={step}
           hasContent={LEVEL_IDS.map((id) => levelHasContent(draft.levels[id]))}
@@ -59,7 +71,7 @@ export default function BuildView({ draft, onChange, saveWorks }: Props) {
               level={level}
               value={draft.levels[level]}
               onChange={updateLevel}
-              guidanceOnSmallScreens={<GuidancePanel level={level} />}
+              guidanceOnSmallScreens={<GuidancePanel level={level} mode={mode} onSeeExamples={onSeeExamples} />}
             />
           </div>
 
@@ -97,10 +109,11 @@ export default function BuildView({ draft, onChange, saveWorks }: Props) {
           </div>
         </main>
 
-        {/* Guidance beside the form, wide screens only. It stays in view while scrolling. */}
+        {/* Guidance beside the form, wide screens only. It stays in view while scrolling,
+            and scrolls on its own if it is taller than the screen (tabIndex lets keyboard users scroll it). */}
         <div className="hidden lg:block">
-          <div className="sticky top-6">
-            <GuidancePanel level={level} />
+          <div tabIndex={0} className="sticky top-6 max-h-[calc(100vh-3rem)] overflow-y-auto rounded-xl">
+            <GuidancePanel level={level} mode={mode} onSeeExamples={onSeeExamples} />
           </div>
         </div>
       </div>

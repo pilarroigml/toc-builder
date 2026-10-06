@@ -1,5 +1,26 @@
 # Project log
 
+## Extra — "Who are you building this for?" mode (6 October 2026, waiting for Pilar's check)
+
+### 1. What now exists and where
+- A dropdown above the progress steps () with Not sure yet, NGO, Student, Researcher, Social entrepreneur, Community group and Individual. It is remembered on the device ().
+- The guidance panel gains an "In a similar project" section () showing how a matching worked example handled the current level, with "Show another example" and "See full examples".
+- Matching: examples tagged with the chosen user type come first, with the running story (girls' school) last, because it is already on screen. Types with no example yet, and "Not sure yet", show the running story.
+- The gallery's "Who it's for" filter starts at the chosen type when an example matches it.
+- On computers, the guidance panel now scrolls on its own if it's taller than the screen.
+- One setting,  at the top of , now controls both the running story and the example offered when the diagram is empty.
+
+### 2. How to run or open it
+- , then choose an option under "Who are you building this for?" on Build and look at the bottom of the guidance panel.
+
+### 3. How I'd know it broke
+- The "In a similar project" section shows the wrong example, or none.
+
+### 4. How to fix or change it
+- Which examples match comes from each example's  in . New examples join automatically.
+- Wording is in  (,  and similar).
+
+
 ## Extra — Dark mode (done, 6 October 2026)
 
 ### 1. What now exists and where
@@ -99,7 +120,7 @@ The brief's student food redistribution example was dropped because it overlaps 
 
 ### 4. How to fix or change it
 - Colours come from the top of `src/index.css`. Wording ("Your theory of change", "Assumes", "Nothing yet") is in `content/ui.en.json`.
-- To change which example is offered when the diagram is empty, edit `STARTER_EXAMPLE_ID` at the top of `src/App.tsx`.
+- To change which example is offered when the diagram is empty, edit `RUNNING_STORY_EXAMPLE_ID` at the top of `src/lib/mode.ts`.
 
 ## Step 3 — Guidance panel (done, 6 October 2026)
 
