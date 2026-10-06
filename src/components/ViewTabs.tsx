@@ -1,9 +1,9 @@
 // The switch between views: building the theory of change, seeing it as a diagram,
-// and seeing it as a logframe table.
+// seeing it as a logframe table, and browsing worked examples.
 
 import { ui } from '../lib/content'
 
-export type View = 'build' | 'diagram' | 'logframe'
+export type View = 'build' | 'diagram' | 'logframe' | 'examples'
 
 type Props = {
   current: View
@@ -15,6 +15,7 @@ export default function ViewTabs({ current, onChange }: Props) {
     { id: 'build', label: ui.viewBuild },
     { id: 'diagram', label: ui.viewDiagram },
     { id: 'logframe', label: ui.viewLogframe },
+    { id: 'examples', label: ui.viewExamples },
   ]
   return (
     <nav aria-label={ui.viewsLabel} className="flex gap-1 rounded-lg border border-line-soft bg-white p-1">

@@ -24,6 +24,7 @@ export const SECTORS = [
   'gender',
   'financial-inclusion',
   'sustainability',
+  'energy',
   'research',
   'social-impact',
 ] as const

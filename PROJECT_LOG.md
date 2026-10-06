@@ -1,5 +1,34 @@
 # Project log
 
+## Step 6 — Examples gallery (part 1 of 2: the gallery, 6 October 2026)
+
+### Example lineup (agreed with Pilar, 6 October 2026; replaces the brief's table)
+| # | Example | User type | Sector | Status |
+|---|---|---|---|---|
+| 1 | Keeping girls in secondary school | Small NGO | Development, education, gender | Done |
+| 2 | Mobile savings groups for smallholder farmers | Small NGO | Development, financial inclusion | Next (IPA, J-PAL) |
+| 3 | Food waste social enterprise (surplus-food app and kitchen waste tracking, modelled on business models like Too Good To Go and Orbisk without naming them) | Social entrepreneur | Sustainability | To do (UNEP Food Waste Index, WRAP, Champions 12.3) |
+| 4 | Getting policy research to decision makers | Researcher | Research | To do (IPA, J-PAL, ODI, IDRC) |
+| 5 | Clean cooking stoves | Small NGO or enterprise | Energy (new sector) | Stretch (ESMAP) |
+| 6 | Community garden or personal project | Community or individual | Social impact | Stretch |
+
+The brief's student food redistribution example was dropped because it overlaps with Example 3.
+
+### 1. What now exists and where
+- A fourth tab, "Examples" (`src/components/Gallery.tsx`). It has filters for sector and "who it's for", showing only options that at least one example uses. Each card shows tags, the illustrative notice, a summary, an expandable "why this works" with draft pairs and sources, and "Load into my canvas".
+- Loading replaces the user's work, so it asks first when there is any. After loading, the user lands on Build with the note "Example loaded. Everything here is now yours to edit."
+- Display names for sectors and user types are in `content/ui.en.json` (`sectorNames`, `userTypeNames`). "Energy" was added to `src/schema/lists.ts`.
+
+### 2. How to run or open it
+- `npm run dev`, open `http://localhost:5173/toc-builder/`, click "Examples".
+
+### 3. How I'd know it broke
+- An example file is missing from the gallery. Check that its file is in `content/examples/` and the build passes.
+- "Load into my canvas" replaces work without asking.
+
+### 4. How to fix or change it
+- To add an example, drop a new `.json` file in `content/examples/`, with `"id"` matching the file name. It appears in the gallery automatically.
+
 ## Step 5 — Quality checklist (done, 6 October 2026)
 
 ### 1. What now exists and where
