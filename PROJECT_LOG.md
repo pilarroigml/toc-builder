@@ -5,11 +5,11 @@
 ### Example lineup (agreed with Pilar, 6 October 2026; replaces the brief's table)
 | # | Example | User type | Sector | Status |
 |---|---|---|---|---|
-| 1 | Keeping girls in secondary school | Small NGO | Development, education, gender | Done |
-| 2 | Mobile savings groups for smallholder farmers | Small NGO | Development, financial inclusion | Done (IPA, J-PAL) |
+| 1 | Keeping girls in secondary school | NGO | Development, education, gender | Done |
+| 2 | Mobile savings groups for smallholder farmers | NGO | Development, financial inclusion | Done (IPA, J-PAL) |
 | 3 | Food waste social enterprise (surplus-food app and kitchen waste tracking, modelled on business models like Too Good To Go and Orbisk without naming them) | Social entrepreneur | Sustainability | To do (UNEP Food Waste Index, WRAP, Champions 12.3) |
 | 4 | Getting policy research to decision makers | Researcher | Research | To do (IPA, J-PAL, ODI, IDRC) |
-| 5 | Clean cooking stoves | Small NGO or enterprise | Energy (new sector) | Stretch (ESMAP) |
+| 5 | Clean cooking stoves | NGO or enterprise | Energy (new sector) | Stretch (ESMAP) |
 | 6 | Community garden or personal project | Community or individual | Social impact | Stretch |
 
 The brief's student food redistribution example was dropped because it overlaps with Example 3.

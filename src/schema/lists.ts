@@ -31,7 +31,7 @@ export const SECTORS = [
 
 // User types used to tag and filter examples.
 export const USER_TYPES = [
-  'small-ngo',
+  'ngo',
   'student',
   'researcher',
   'entrepreneur',

@@ -29,7 +29,7 @@
     "social-impact": "Social impact"
   },
   "userTypeNames": {
-    "small-ngo": "Small NGO",
+    "ngo": "NGO",
     "student": "Student",
     "researcher": "Researcher",
     "entrepreneur": "Social entrepreneur",
