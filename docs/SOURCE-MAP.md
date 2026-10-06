@@ -93,3 +93,16 @@ The definitions are shared with the main version. Strong examples follow Example
 | Short-term outcomes | Example 3, 25% reduction in line with Champions 12.3's average | Own writing | Compare with own baseline, from WRAP measurement guidance |
 | Medium-term outcomes | Example 3 | The competing-apps warning is from Decision Sciences 2026 | "Contribution", from Impact Frontiers. Rebound risk from Nature Communications 2020 and Decision Sciences 2026 |
 | Impact | EU 2030 target, from the European Commission | Own writing | Linking to shared external goals is own writing, using EU targets |
+
+## Tailored for researchers (added 6 October 2026)
+
+The definitions are shared with the main version. Strong examples follow Example 4 (getting research into health policy decisions).
+
+| Level | Strong example | Weak example and fix | Tip |
+|---|---|---|---|
+| Problem | Example 4 | Own writing | Two problems (real-world and evidence) is own writing, informed by ESRC and ODI ROMA |
+| Activities | Example 4, sessions modelled on J-PAL Brazil | Own writing | Engaging early, from ESRC (knowledge exchange, co-production). Brazil finding from J-PAL. Relevance from IDRC RQ+ |
+| Outputs | Example 4 | Own writing | "Positioning for use", from IDRC RQ+. The AI formats point is own writing (needs review) |
+| Short-term outcomes | Example 4 | Own writing | Understanding and skills before policy, from ESRC's conceptual and capacity-building impact. Pakistan finding from the World Bank blog |
+| Medium-term outcomes | Example 4 | Own writing | Politics and timing, from ODI ROMA. Effect size from J-PAL Brazil |
+| Impact | Example 4 | Own writing | Scientific, societal and economic impact, from the European Commission's Horizon Europe page |

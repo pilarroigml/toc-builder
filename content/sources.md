@@ -69,6 +69,17 @@ Uses the Example 3 sources above (UNEP, European Commission, Champions 12.3, WRA
 
 Checked and not used: UNDP SDG Impact Standards for Enterprises. Its page (sdgimpact.undp.org/enterprise) now redirects to a general UNDP SDG private finance homepage.
 
+### Guidance tailored for researchers (variants in content/fields.en.json)
+
+Uses the Example 4 sources above (UKRI ESRC, ODI ROMA, J-PAL Brazil, World Bank Pakistan), plus:
+
+| Title | Organisation | URL | Date accessed | Used for |
+|-------|--------------|-----|---------------|----------|
+| Research Quality Plus: a holistic approach to evaluating research (6 July 2018) | IDRC | https://idrc-crdi.ca/en/stories/research-quality-plus-holistic-approach-evaluating-research | 2026-10-06 | "Positioning for use": researchers can be accountable for preparing research so it is likely to be used, but cannot control whether it is. Outputs tip and activities. **Older (2018)**, flag in review. No reuse terms stated, so only the idea is paraphrased. |
+| Monitoring, evaluation and impact assessment of Horizon Europe | European Commission, Research and Innovation | https://research-and-innovation.ec.europa.eu/strategy/support-policy-making/shaping-eu-research-and-innovation-policy/monitoring-evaluation-and-impact-assessment-horizon-europe_en | 2026-10-06 | Impact tip: Horizon Europe tracks scientific, societal and economic impact through Key Impact Pathways. Only the three broad categories are mentioned, not the nine pathways. |
+
+The researcher Outputs tip mentions formats that AI tools can read, so it is marked "needs-review" (see the AI flag under Example 4).
+
 ## World Bank Gender Innovation Labs, checked 6 October 2026
 
 Tip for reading their briefs: each brief's page on documents.worldbank.org has a "TXT" link with a plain-text version, which avoids downloading the PDF.

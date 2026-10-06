@@ -79,6 +79,30 @@
             }
           ],
           "status": "draft"
+        },
+        "researcher": {
+          "strongExample": "District health officials plan vaccination campaigns with little local evidence. Studies arrive as long reports after decisions are made, so findings rarely shape the plans.",
+          "weakExample": {
+            "text": "There is a gap in the literature on vaccination reminders.",
+            "whatIsWrong": "This is a gap in knowledge for researchers, not a problem for the people affected or the people making decisions. A theory of change for research starts from the real-world problem the research should help solve.",
+            "improved": "Many children are not vaccinated on time, and health plans make little use of local evidence on what helps."
+          },
+          "tip": "Name two problems and keep them apart: the real-world problem (children missing vaccinations) and the evidence problem (decisions made without usable evidence). Your research tackles the second so that it can help with the first.",
+          "sources": [
+            {
+              "title": "Defining impact (ESRC impact toolkit)",
+              "organisation": "UKRI, Economic and Social Research Council",
+              "url": "https://www.ukri.org/councils/esrc/impact-toolkit-for-economic-and-social-sciences/defining-impact/",
+              "accessed": "2026-10-06"
+            },
+            {
+              "title": "ROMA: a guide to policy engagement and policy influence (2021)",
+              "organisation": "ODI",
+              "url": "https://odi.org/en/about/features/roma-a-guide-to-policy-engagement-and-policy-influence/",
+              "accessed": "2026-10-06"
+            }
+          ],
+          "status": "draft"
         }
       }
     },
@@ -155,6 +179,36 @@
             }
           ],
           "status": "draft"
+        },
+        "researcher": {
+          "strongExample": "Agree research questions with ministry staff before the study starts, share findings in short briefs timed to the budget cycle, and run 45-minute evidence sessions for district officials.",
+          "weakExample": {
+            "text": "Publish findings in peer-reviewed journals.",
+            "whatIsWrong": "Publishing matters for academic impact, but on its own it rarely reaches decision makers in time. As the only activity, it leaves out how the evidence will be used.",
+            "improved": "Share findings in two-page briefs timed to the ministry's budget cycle."
+          },
+          "tip": "Start engaging before the research, not after. Agreeing questions with the people who will use the answers makes the work more relevant and builds the relationships that uptake depends on. Short, well-timed sessions can make a difference: in one experiment in Brazil, mayors who attended a 45-minute evidence session were more likely to adopt the policy.",
+          "sources": [
+            {
+              "title": "Defining impact (ESRC impact toolkit)",
+              "organisation": "UKRI, Economic and Social Research Council",
+              "url": "https://www.ukri.org/councils/esrc/impact-toolkit-for-economic-and-social-sciences/defining-impact/",
+              "accessed": "2026-10-06"
+            },
+            {
+              "title": "Measuring the impact of information on mayors' policy decisions: evidence from Brazil (2019)",
+              "organisation": "J-PAL (Abdul Latif Jameel Poverty Action Lab)",
+              "url": "https://www.povertyactionlab.org/blog/11-25-19/measuring-impact-information-mayors-policy-decisions-evidence-brazil",
+              "accessed": "2026-10-06"
+            },
+            {
+              "title": "Research Quality Plus: a holistic approach to evaluating research (2018)",
+              "organisation": "IDRC (International Development Research Centre)",
+              "url": "https://idrc-crdi.ca/en/stories/research-quality-plus-holistic-approach-evaluating-research",
+              "accessed": "2026-10-06"
+            }
+          ],
+          "status": "draft"
         }
       }
     },
@@ -213,6 +267,30 @@
             }
           ],
           "status": "draft"
+        },
+        "researcher": {
+          "strongExample": "Four policy briefs published before budget deadlines, evidence sessions reaching officials from 20 districts, and open data with a plain summary for every finding.",
+          "weakExample": {
+            "text": "Three journal articles and a final report.",
+            "whatIsWrong": "These are real outputs, but they only show academic reach. Add outputs aimed at the people who will use the evidence, and say who they reach.",
+            "improved": "Evidence sessions reach officials from 20 of 25 districts."
+          },
+          "tip": "You can be held accountable for positioning your research for use: clear, timely products aimed at specific users. You can't fully control whether it is used. Outputs are where you show that positioning. Consider formats that AI tools used by officials can read accurately, such as open data and plain summaries.",
+          "sources": [
+            {
+              "title": "Research Quality Plus: a holistic approach to evaluating research (2018)",
+              "organisation": "IDRC (International Development Research Centre)",
+              "url": "https://idrc-crdi.ca/en/stories/research-quality-plus-holistic-approach-evaluating-research",
+              "accessed": "2026-10-06"
+            },
+            {
+              "title": "Defining impact (ESRC impact toolkit)",
+              "organisation": "UKRI, Economic and Social Research Council",
+              "url": "https://www.ukri.org/councils/esrc/impact-toolkit-for-economic-and-social-sciences/defining-impact/",
+              "accessed": "2026-10-06"
+            }
+          ],
+          "status": "needs-review"
         }
       }
     },
@@ -261,6 +339,30 @@
               "title": "Measuring and reporting food waste in hospitality and food service (2018)",
               "organisation": "WRAP",
               "url": "https://www.wrap.ngo/resources/measuring-and-reporting-food-waste-hospitality-and-food-service",
+              "accessed": "2026-10-06"
+            }
+          ],
+          "status": "draft"
+        },
+        "researcher": {
+          "strongExample": "District officials understand what the study found and how strong it is, and ministry analysts can judge evidence when advising on plans.",
+          "weakExample": {
+            "text": "Increased awareness of our research.",
+            "whatIsWrong": "Awareness is vague and can't show whether anything changed in how decisions are made. Say who understands what, or what they can now do.",
+            "improved": "District officials understand the study's main finding and how strong the evidence is."
+          },
+          "tip": "Research impact usually starts with changes in understanding and skills before any change in policy. Naming these first steps makes your pathway realistic and gives you something to track early. In one experiment in Pakistan, training civil servants in evaluation methods changed how they valued evidence.",
+          "sources": [
+            {
+              "title": "Defining impact (ESRC impact toolkit)",
+              "organisation": "UKRI, Economic and Social Research Council",
+              "url": "https://www.ukri.org/councils/esrc/impact-toolkit-for-economic-and-social-sciences/defining-impact/",
+              "accessed": "2026-10-06"
+            },
+            {
+              "title": "What happens when you train senior civil servants in econometrics? (2022)",
+              "organisation": "World Bank, Development Impact blog",
+              "url": "https://blogs.worldbank.org/en/impactevaluations/what-happens-when-you-train-senior-civil-servants-econometrics",
               "accessed": "2026-10-06"
             }
           ],
@@ -329,6 +431,36 @@
             }
           ],
           "status": "draft"
+        },
+        "researcher": {
+          "strongExample": "More district immunisation plans use the study's findings, and the ministry budgets for the approach in its next plan.",
+          "weakExample": {
+            "text": "Our research changes national policy.",
+            "whatIsWrong": "Policy change has many causes, and few studies can claim it alone. It also gives no way to see progress before the very end.",
+            "improved": "10 of 25 district plans use the study's findings by 2028."
+          },
+          "tip": "Changes in plans, budgets or practice depend on politics and timing you don't control. Set modest, visible targets and name the risks, such as a change of government or a budget cut. Realistic effects can be small: in the Brazil experiment, a session raised adoption by about 10 percentage points.",
+          "sources": [
+            {
+              "title": "ROMA: a guide to policy engagement and policy influence (2021)",
+              "organisation": "ODI",
+              "url": "https://odi.org/en/about/features/roma-a-guide-to-policy-engagement-and-policy-influence/",
+              "accessed": "2026-10-06"
+            },
+            {
+              "title": "Defining impact (ESRC impact toolkit)",
+              "organisation": "UKRI, Economic and Social Research Council",
+              "url": "https://www.ukri.org/councils/esrc/impact-toolkit-for-economic-and-social-sciences/defining-impact/",
+              "accessed": "2026-10-06"
+            },
+            {
+              "title": "Measuring the impact of information on mayors' policy decisions: evidence from Brazil (2019)",
+              "organisation": "J-PAL (Abdul Latif Jameel Poverty Action Lab)",
+              "url": "https://www.povertyactionlab.org/blog/11-25-19/measuring-impact-information-mayors-policy-decisions-evidence-brazil",
+              "accessed": "2026-10-06"
+            }
+          ],
+          "status": "draft"
         }
       }
     },
@@ -383,6 +515,30 @@
               "title": "Food Waste Index Report 2024",
               "organisation": "UNEP (United Nations Environment Programme)",
               "url": "https://www.unep.org/resources/publication/food-waste-index-report-2024",
+              "accessed": "2026-10-06"
+            }
+          ],
+          "status": "draft"
+        },
+        "researcher": {
+          "strongExample": "More children are fully vaccinated on time across the country.",
+          "weakExample": {
+            "text": "Evidence-based policymaking everywhere.",
+            "whatIsWrong": "It's too broad to show what your research contributes, and it describes a process rather than a change in people's lives.",
+            "improved": "More children in the country are fully vaccinated by age 2."
+          },
+          "tip": "Research funders increasingly ask how research contributes to change in society, not only to new knowledge. Horizon Europe, for example, tracks scientific, societal and economic impact. State the societal change you are working towards, and be clear that research contributes alongside many others.",
+          "sources": [
+            {
+              "title": "Monitoring, evaluation and impact assessment of Horizon Europe",
+              "organisation": "European Commission, Research and Innovation",
+              "url": "https://research-and-innovation.ec.europa.eu/strategy/support-policy-making/shaping-eu-research-and-innovation-policy/monitoring-evaluation-and-impact-assessment-horizon-europe_en",
+              "accessed": "2026-10-06"
+            },
+            {
+              "title": "Defining impact (ESRC impact toolkit)",
+              "organisation": "UKRI, Economic and Social Research Council",
+              "url": "https://www.ukri.org/councils/esrc/impact-toolkit-for-economic-and-social-sciences/defining-impact/",
               "accessed": "2026-10-06"
             }
           ],
