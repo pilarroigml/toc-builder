@@ -1,6 +1,6 @@
 # Project log
 
-## Extra — "Who are you building this for?" mode and tailored guidance (6 October 2026, in progress)
+## Extra — "Who are you building this for?" mode and tailored guidance (done, 8 October 2026)
 
 ### Update: fully tailored guidance (Pilar's decision)
 - The "In a similar project" section was removed. Instead, each level in `content/fields.en.json` can have `variants` per user type, with their own strong example, weak example, tip, sources and status. The definition stays shared. Missing variants fall back to the main (NGO) version.
